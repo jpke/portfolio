@@ -9,58 +9,122 @@ body {
 background-size: cover;
 }
 
-.nav {
+.navbar {
   display: flex;
+  justify-content: space-between;
+  margin: 1vh;
+  font-size: 2vh;
 }
 
-.nav a {
+.navbar a {
   padding: 10px;
   color: black;
   text-decoration:none;
 }
 
-.nav a:hover {
+.navbar a:hover {
   font-size: larger;
   font-weight: bold;
 }
 
 .header {
-  margin: 100px;
+  margin-top: 7vh;
+  height: 90vh;
+}
+
+.title{
+  margin-bottom: 30vh;
+}
+
+.tech {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5vh;
+}
+
+.technologies {
+  height: 5vh;
+  margin: 0 2vh 2vh 2vh;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .header h4 {
   font-style: italic;
 }
 
-.aboutMeContainer {
-  display: flex;
-  padding: 10px;
+#main {
+  font-size: large;
 }
 
-.aboutMeBlurb {
-  flex: 2;
+.aboutMeContainer {
+  padding-top: 15px;
+  /*background-color: rgba(34,34,34,0.5);*/
+  font-size: large;
+}
+
+.aboutMeTop {
+  display: flex;
+  padding: 0px 50px 50px 50px;
+}
+
+.aboutMeText {
+  flex: 3;
+  padding: 15px;
+  margin: 15px;
+  /*background-color: white;*/
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+  font-size: larger;
+}
+
+.profilePicContainer {
+  flex: 1;
+  padding: 2vh;
+  display: flex;
+  align-items: center;
 }
 
 .profilePic {
-  height: 100px;
-  margin-right: 20px;
+  height: 20vh;
   border-radius: 5px;
 }
 
 .projectsContainer {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .projectDiv {
-  height: 150px;
-  width: 200px;
-  background-color: white;
-  margin: 10px;
+  width: 23vh;
+  margin: 1vh
+}
+
+.projectImg {
+  height: 15vh;
+  border-radius: 5px;
+}
+
+.contactContainer {
+  margin: 10vh;
+}
+
+.contactMe a {
+  color:black;
+  font-size: 2vh;
+  padding: 1vh;
+}
+
+#contactInfo {
+  margin-top: 1vh;
+}
+
+#contactInfo h4 {
+  margin: 0.5vh;
+  font-size: smaller;
 }
 
 form {
@@ -68,6 +132,7 @@ form {
 }
 
 .formContainer {
+  margin: 2vh;
   display: flex;
   justify-content: center;
 }
