@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url("../public/minimalism.jpg") no-repeat center center fixed;
+  background: url("../public/minimalism.png") no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -25,6 +25,61 @@ background-size: cover;
 }
 
 .header {
-  /*height: 100px;*/
+  margin: 100px;
+}
 
+h1 {
+  font-size: 40px;
+}
+
+.header h4 {
+  font-style: italic;
+}
+
+.aboutMeContainer {
+  display: flex;
+  padding: 10px;
+}
+
+.aboutMeBlurb {
+  flex: 2;
+}
+
+.profilePic {
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.projectDiv {
+  height: 150px;
+  width: 200px;
+  background-color: white;
+  margin: 10px;
+}
+
+form {
+  width: 300px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.contactForm {
+  width: 300px;
+  border-radius: 3px;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
+.message {
+  height: 100px;
+  width: 300px;
 }

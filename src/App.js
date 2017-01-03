@@ -16,8 +16,8 @@ class App extends Component {
         </section>
         <section className="header">
           <h1>Portfolio</h1>
-          <h2>of</h2>
           <h2>Web and Mobile Development</h2>
+          <h4>Simple Concise Elegant</h4>
         </section>
         <section className="main">
           <AboutMe />
