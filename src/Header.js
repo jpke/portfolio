@@ -17,6 +17,9 @@ const Header = () => (
       <h1>JP Earnest</h1>
       <h2>FullStack Web and Mobile Developer</h2>
     </section>
+    <div className="downArrow">
+      <a href="#main"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
   </div>
 )
 

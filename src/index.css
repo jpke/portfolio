@@ -1,6 +1,6 @@
 body {
-  /*margin: 0;
-  margin-bottom: -20px;*/
+  margin: 0;
+  margin-bottom: -20px;
   padding: 0;
   height: 130vh;
   font-family: sans-serif;
@@ -11,16 +11,24 @@ body {
   -o-background-size: cover;
   background-size: cover;
   z-index: 1;
+  color: #222222;
 }
 
 .navFixed {
   position: fixed;
   width: 100%;
+  background: url("../public/minimalism.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 2;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 1vh;
   font-size: 2vh;
 }
@@ -36,15 +44,24 @@ body {
   font-weight: bold;
 }
 
-.headerPic {
-}
-
 .header {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title{
-  padding-top: 10vh;
+  padding-top: 10vmin;
+}
+
+.downArrow {
+  justify-content: flex-end;
+  font-size: 5vh;
+}
+
+.downArrow a {
+  color: #222222;
 }
 
 .tech {
@@ -68,9 +85,9 @@ h1 {
 
 #main {
   font-size: large;
-  background-color: white;
-  height: 95vh;
-  overflow: scroll;
+  background-color: #eeeeee;
+  padding: 6vh;
+  /*margin-top: 50px;*/
 }
 
 #main h3 {
@@ -78,7 +95,7 @@ h1 {
 }
 
 .aboutMeContainer {
-  padding-top: 15px;
+  /*padding-top: 15px;*/
   /*background-color: rgba(34,34,34,0.5);*/
   font-size: large;
 }
@@ -139,7 +156,11 @@ h1 {
 }
 
 .contactContainer {
-  margin-top: 15vh;
+  margin-top: 6vh;
+}
+
+.contactContainer h3 {
+  font-size: 2.5vh;
 }
 
 .contactMe a {
@@ -161,10 +182,9 @@ h1 {
 
 #contactInfo h4 {
   margin: 0.5vh;
-  font-size: smaller;
 }
 
 .footer {
-  padding-top: 1vh;
+  padding-top: 4vh;
   padding-bottom: 2vh;
 }
