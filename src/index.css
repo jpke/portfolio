@@ -16,13 +16,13 @@ background-size: cover;
   font-size: 2vh;
 }
 
-.navbar a {
+.navLink {
   padding: 10px;
   color: black;
   text-decoration:none;
 }
 
-.navbar a:hover {
+.navLink:hover {
   font-size: larger;
   font-weight: bold;
 }
@@ -74,7 +74,6 @@ h1 {
   flex: 3;
   padding: 15px;
   margin: 15px;
-  /*background-color: white;*/
   background-color: rgba(255,255,255,0.5);
   border-radius: 5px;
   font-size: larger;
@@ -108,14 +107,27 @@ h1 {
   border-radius: 5px;
 }
 
+.projectDescription {
+  display: flex;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+  padding: 5px;
+  height: 10vh;
+  align-items: center;
+}
+
 .contactContainer {
   margin: 10vh;
 }
 
 .contactMe a {
   color:black;
-  font-size: 2vh;
+  font-size: 3vh;
   padding: 1vh;
+}
+
+.contactMe i:hover {
+  font-size: 3.2vh;
 }
 
 #contactInfo {
