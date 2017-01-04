@@ -1,12 +1,21 @@
 body {
-  margin: 0;
+  /*margin: 0;
+  margin-bottom: -20px;*/
   padding: 0;
+  height: 130vh;
   font-family: sans-serif;
+  text-align: center;
   background: url("../public/minimalism.png") no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1;
+}
+
+.navFixed {
+  position: fixed;
+  width: 100%;
 }
 
 .navbar {
@@ -27,13 +36,15 @@ background-size: cover;
   font-weight: bold;
 }
 
+.headerPic {
+}
+
 .header {
-  margin-top: 7vh;
-  height: 90vh;
+  height: 100vh;
 }
 
 .title{
-  margin-bottom: 30vh;
+  padding-top: 10vh;
 }
 
 .tech {
@@ -57,6 +68,13 @@ h1 {
 
 #main {
   font-size: large;
+  background-color: white;
+  height: 95vh;
+  overflow: scroll;
+}
+
+#main h3 {
+  font-size: 2.5vh;
 }
 
 .aboutMeContainer {
@@ -77,6 +95,7 @@ h1 {
   background-color: rgba(255,255,255,0.5);
   border-radius: 5px;
   font-size: larger;
+  max-width: 700px;
 }
 
 .profilePicContainer {
@@ -84,6 +103,7 @@ h1 {
   padding: 2vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .profilePic {
@@ -99,7 +119,9 @@ h1 {
 
 .projectDiv {
   width: 23vh;
-  margin: 1vh
+  margin: 1vh;
+  /*box-shadow: 0px 0px 6px rgba(0,0,0, 0.4);*/
+  box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.2);
 }
 
 .projectImg {
@@ -117,7 +139,7 @@ h1 {
 }
 
 .contactContainer {
-  margin: 10vh;
+  margin-top: 15vh;
 }
 
 .contactMe a {
@@ -132,6 +154,9 @@ h1 {
 
 #contactInfo {
   margin-top: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 #contactInfo h4 {
@@ -139,24 +164,7 @@ h1 {
   font-size: smaller;
 }
 
-form {
-  width: 300px;
-}
-
-.formContainer {
-  margin: 2vh;
-  display: flex;
-  justify-content: center;
-}
-
-.contactForm {
-  width: 300px;
-  border-radius: 3px;
-  padding: 8px;
-  margin-bottom: 5px;
-}
-
-.message {
-  height: 100px;
-  width: 300px;
+.footer {
+  padding-top: 1vh;
+  padding-bottom: 2vh;
 }

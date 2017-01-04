@@ -15,34 +15,7 @@ const Header = () => (
   <div className="header">
     <section className="title">
       <h1>JP Earnest</h1>
-      <h2>FullStack JavaScript Portfolio</h2>
-      <h2>Web and Mobile Development</h2>
-      <h4>Simple Concise Elegant</h4>
-    </section>
-    <section>
-      <div className="tech">
-        <div className="techDiv">
-          <h3>Languages</h3>
-          <img src={html} className="technologies" alt="html"/>
-          <img src={css} className="technologies" alt="css"/>
-          <img src={js} className="technologies" alt="javascript"/>
-          <img src={R} className="technologies" alt="R"/>
-        </div>
-        <div className="techDiv">
-          <h3>Frameworks</h3>
-          <img src={rct} className="technologies" alt=" react"/>
-          <img src={rctnative} className="technologies" alt=" react-native"/>
-          <img src={jquery} className="technologies" alt=" jQuery"/>
-          <img src={node} className="technologies" alt=" node"/>
-        </div>
-      </div>
-      <div className="tech">
-        <div className="techDiv">
-          <h3>Databases</h3>
-          <img src={mongodb} className="technologies" alt="mongodb"/>
-          <img src={postgresql} className="technologies" alt="postgreSQL"/>
-        </div>
-      </div>
+      <h2>FullStack Web and Mobile Developer</h2>
     </section>
   </div>
 )

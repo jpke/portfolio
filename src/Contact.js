@@ -8,17 +8,8 @@ const Contact = () => (
     <section id="contactInfo">
       <h4>jp earnest</h4>
       <h4>fredericksburg, va</h4>
-      <h4>jpearnest08@gmail.com</h4>
-      <h4>540.273.5906</h4>
+      <h4>jp@jpearnest.com</h4>
     </section>
-    <div className="formContainer">
-      <form>
-        <input type="text" className="contactForm" placeholder="your name"/>
-        <input type="text" className="contactForm" placeholder="phone"/>
-        <input type="text" className="contactForm" placeholder="email"/>
-        <textarea type="text" className="contactForm message" col="40" placeholder="message"></textarea>
-      </form>
-    </div>
   </div>
 )
 
