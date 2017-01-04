@@ -1,8 +1,8 @@
 ##ToDo:
--Update and deploy App_with_paul under react
--Update and push ewokese opacity fix
--Update and deploy shopping list app
--Deploy Blogger app in simulator and create companion webpage
+- Update and deploy App_with_paul under react
+- Update and push ewokese opacity fix
+- Update and deploy shopping list app
+- Deploy Blogger app in simulator and create companion webpage
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
