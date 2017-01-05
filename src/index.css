@@ -247,3 +247,7 @@ h1 {
     height: 95vmin;
   }
 }
+
+body.is-os {
+      background: url(/static/media/minimalism.ea7a4b34.png) no-repeat 50%;
+}
