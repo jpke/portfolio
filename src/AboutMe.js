@@ -16,6 +16,9 @@ const AboutMe = () => (
         </div>
       </section>
       <Tech />
+      <div className="downArrow">
+        <a href="#projects"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
+      </div>
     </div>
   </div>
 )

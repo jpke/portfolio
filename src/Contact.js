@@ -10,6 +10,9 @@ const Contact = () => (
       <h4>fredericksburg, va</h4>
       <h4>jp@jpearnest.com</h4>
     </section>
+    <div className="downArrow">
+      <a href="#top"><i className="fa fa-chevron-up" aria-hidden="true"></i></a>
+    </div>
   </div>
 )
 

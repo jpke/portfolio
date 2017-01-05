@@ -41,6 +41,9 @@ const Projects = () => (
         <p className="projectDescription">A basic blog created with react native for iOS</p>
       </div>
     </div>
+    <div className="downArrow">
+      <a href="#contact"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
   </div>
 )
 
