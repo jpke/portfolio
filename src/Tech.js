@@ -25,21 +25,25 @@ const Tech = () => (
               <img src={R} className="technologies" alt="R"/>
         		</div>
         		<div className="back">
-              <div className="tech-back">
-                <img src={html} className="technologies back-icon" alt="html"/>
-                <h6>HTML 5</h6>
+              <div className="back-col">
+                <div className="tech-back">
+                  <img src={html} className="technologies back-icon" alt="html"/>
+                  <h6>HTML5</h6>
+                </div>
+                <div className="tech-back">
+                  <img src={css} className="technologies back-icon" alt="css"/>
+                  <h6>CSS3</h6>
+                </div>
               </div>
-              <div className="tech-back">
-                <img src={css} className="technologies back-icon" alt="css"/>
-                <h6>CSS 3</h6>
-              </div>
-              <div className="tech-back">
-              <img src={js} className="technologies back-icon" alt="javascript"/>
-                <h6>JavaScript 6</h6>
-              </div>
-              <div className="tech-back">
-                <img src={R} className="technologies back-icon" alt="R"/>
-                <h6>R</h6>
+              <div className="back-col">
+                <div className="tech-back">
+                <img src={js} className="technologies back-icon" alt="javascript"/>
+                  <h6>JavaScript</h6>
+                </div>
+                <div className="tech-back">
+                  <img src={R} className="technologies back-icon" alt="R"/>
+                  <h6>R</h6>
+                </div>
               </div>
         		</div>
         	</div>
@@ -56,21 +60,25 @@ const Tech = () => (
               <img src={jquery} className="technologies" alt=" jQuery"/>
         		</div>
         		<div className="back">
-              <div className="tech-back">
-                <img src={rct} className="technologies back-icon" alt="html"/>
-                <h6>React</h6>
+              <div className="back-col">
+                <div className="tech-back">
+                  <img src={rct} className="technologies back-icon" alt="html"/>
+                  <h6>React</h6>
+                </div>
+                <div className="tech-back">
+                  <img src={rctnative} className="technologies back-icon" alt="html"/>
+                  <h6>React Native</h6>
+                </div>
               </div>
-              <div className="tech-back">
-                <img src={rctnative} className="technologies back-icon" alt="html"/>
-                <h6>React Native</h6>
-              </div>
-              <div className="tech-back">
-                <img src={node} className="technologies back-icon" alt="html"/>
-                <h6>NodeJs</h6>
-              </div>
-              <div className="tech-back">
-                <img src={jquery} className="technologies back-icon" alt="html"/>
-                <h6>jQuery</h6>
+              <div className="back-col">
+                <div className="tech-back">
+                  <img src={node} className="technologies back-icon" alt="html"/>
+                  <h6>NodeJs</h6>
+                </div>
+                <div className="tech-back">
+                  <img src={jquery} className="technologies back-icon" alt="html"/>
+                  <h6>jQuery</h6>
+                </div>
               </div>
         		</div>
         	</div>
@@ -85,13 +93,15 @@ const Tech = () => (
             <img src={postgresql} className="technologies" alt="postgreSQL"/>
             </div>
             <div className="back">
-              <div className="tech-back">
-                <img src={mongodb} className="technologies back-icon" alt="html"/>
-                <h6>MongoDB</h6>
-              </div>
-              <div className="tech-back">
-                <img src={postgresql} className="technologies back-icon" alt="html"/>
-                <h6>PostgreSQL</h6>
+              <div className="back-col">
+                <div className="tech-back">
+                  <img src={mongodb} className="technologies back-icon" alt="html"/>
+                  <h6>MongoDB</h6>
+                </div>
+                <div className="tech-back">
+                  <img src={postgresql} className="technologies back-icon" alt="html"/>
+                  <h6>PostgreSQL</h6>
+                </div>
               </div>
             </div>
           </div>

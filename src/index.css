@@ -189,8 +189,13 @@ h1 {
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
-  /*position: static;;*/
-  z-index: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.back-col {
+  display: flex;
+  flex-direction: column;
 }
 
 .profilePicContainer {
@@ -373,6 +378,19 @@ h1 {
   }
   .profilePic {
     height: 20vmax;
+  }
+  .tech{
+    margin-top:5vmax;
+    flex-direction: column;
+  }
+  .techDiv {
+    margin-bottom: 5vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutMeDownArrow {
+    margin-top: 3vmax;
   }
   #main h3 {
     font-size: 3.5vmax;
