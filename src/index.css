@@ -230,6 +230,7 @@ h1 {
   .projectsContainer {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-wrap: nowrap;
   }
   #aboutMe {
