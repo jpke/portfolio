@@ -45,7 +45,7 @@ body {
 }
 
 .header {
-  height: 100vmax;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
