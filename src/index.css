@@ -2,7 +2,7 @@ body {
   margin: 0;
   margin-bottom: -20px;
   padding: 0;
-  height: 130vh;
+  height: 130vmax;
   font-family: sans-serif;
   text-align: center;
   background: url("../public/minimalism.png") no-repeat center center fixed;
@@ -29,8 +29,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1vh;
-  font-size: 2vh;
+  margin: 1vmax;
+  font-size: 2vmax;
 }
 
 .navLink {
@@ -45,19 +45,19 @@ body {
 }
 
 .header {
-  height: 100vh;
+  height: 100vmax;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .title{
-  padding-top: 10vmin;
+  padding-top: 10vmax;
 }
 
 .downArrow {
   justify-content: flex-end;
-  font-size: 5vh;
+  font-size: 5vmax;
 }
 
 .downArrow a {
@@ -67,7 +67,7 @@ body {
 .tech {
   display: flex;
   justify-content: space-around;
-  font-size: 2.5vh;
+  font-size: 2.5vmax;
   flex-wrap: wrap;
 }
 
@@ -77,8 +77,8 @@ body {
 }
 
 .technologies {
-  height: 5vh;
-  margin: 0 2vh 2vh 2vh;
+  height: 5vmax;
+  margin: 0 2vmax 2vmax 2vmax;
 }
 
 h1 {
@@ -94,13 +94,13 @@ h1 {
 }
 
 #main h3 {
-  font-size: 2.5vh;
+  font-size: 2.5vmax;
 }
 
 .aboutMeContainer {
-  margin-top: 6vh;
-  padding-top: 6vh;
-  padding-bottom: 6vh;
+  margin-top: 6vmax;
+  padding-top: 6vmax;
+  padding-bottom: 6vmax;
   /*background-color: rgba(34,34,34,0.5);*/
   background-color: #3399ff;
   font-size: large;
@@ -117,29 +117,29 @@ h1 {
   margin: 15px;
   background-color: rgba(255,255,255,0.5);
   border-radius: 5px;
-  font-size: 2vh;
+  font-size: 2vmax;
   max-width: 700px;
 }
 
 .profilePicContainer {
   flex: 1;
-  padding: 2vh;
+  padding: 2vmax;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .profilePic {
-  height: 20vh;
+  height: 20vmax;
   border-radius: 5px;
 }
 
 #projects {
-  margin-top: 6vh;
-  padding-top: 6vh;
-  padding-bottom: 12vh;
+  margin-top: 6vmax;
+  padding-top: 6vmax;
+  padding-bottom: 12vmax;
   border-radius: 5px;
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .projectsContainer {
@@ -149,14 +149,14 @@ h1 {
 }
 
 .projectDiv {
-  width: 23vh;
-  margin: 1vh;
+  width: 23vmax;
+  margin: 1vmax;
   /*box-shadow: 0px 0px 6px rgba(0,0,0, 0.4);*/
   box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.2);
 }
 
 .projectImg {
-  height: 15vh;
+  height: 15vmax;
   border-radius: 5px;
 }
 
@@ -165,47 +165,57 @@ h1 {
   background-color: rgba(255,255,255,0.5);
   border-radius: 5px;
   padding: 5px;
-  height: 10vh;
+  height: 10vmax;
   align-items: center;
 }
 
 .contactContainer {
-  margin-top: 6vh;
+  margin-top: 6vmax;
 }
 
 .contactContainer h3 {
-  font-size: 2.5vh;
+  font-size: 2.5vmax;
 }
 
 .contactMe a {
   color:black;
-  font-size: 3vh;
-  padding: 1vh;
+  font-size: 3vmax;
+  padding: 1vmax;
 }
 
 .contactMe i:hover {
-  font-size: 3.2vh;
+  font-size: 3.2vmax;
 }
 
 #contactInfo {
-  margin-top: 1vh;
+  margin-top: 1vmax;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
 #contactInfo h4 {
-  margin: 0.5vh;
+  margin: 0.5vmax;
 }
 
 .footer {
-  padding-top: 4vh;
-  padding-bottom: 2vh;
+  padding-top: 4vmax;
+  padding-bottom: 2vmax;
 }
 
 @media (max-width: 730px) {
   .aboutMeTop {
     padding: 0;
+  }
+  .projectsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectDiv {
+    width: 90%;
+  }
+  .projectImg {
+    height: 30vmax;
   }
 }
 
@@ -213,5 +223,26 @@ h1 {
   .aboutMeTop {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .aboutMeText {
+    font-size: 3vmax;
+  }
+  #main h3 {
+    font-size: 3.5vmax;
+  }
+}
+
+@media (max-height: 800px){
+  .titleInnerContainer {
+    margin: 0 20vmin;
+    padding: 0.5vmin;
+    background-color: rgba(238,238,238, 0.5);
+  }
+}
+
+@media (max-height: 800px) and (orientation: landscape){
+  .header {
+    padding-top: 5vmin;
+    height: 95vmin;
   }
 }
