@@ -5,14 +5,6 @@ import ewokese from '../public/ewokese.png'
 import ticTacToe from '../public/ticTacToe.png'
 import blogAppReactNative from '../public/blogAppReactNative.png'
 import medicationReminder from '../public/medicationReminder.png'
-// import html from '../public/html.svg'
-// import css from '../public/css.svg'
-// import js from '../public/js.svg'
-// import rct from '../public/react.svg'
-// import rctnative from '../public/rn.svg'
-// import jquery from '../public/jquery.svg'
-// import node from '../public/node.svg'
-// import mongodb from '../public/mongodb.svg'
 
 const Projects = () => (
   <div id="projects">

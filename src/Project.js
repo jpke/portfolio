@@ -2,7 +2,7 @@ import React from 'react'
 import Technologies from './Technologies'
 
 const Project = (props) => (
-      <div className="projectDiv">
+      <div className="projectContainer">
         <h4>{props.title}</h4>
         <a href={props.deployLink} title={props.title + " App"}>
           <img src={props.image} className="projectImg" alt={props.title}/>

@@ -1,12 +1,10 @@
 import React from 'react'
 
-const Header = () => (
-  <div className="header">
+const Landing = () => (
+  <div className="landingContainer">
     <section className="title">
-      <div className="titleInnerContainer">
-        <h1>JP Earnest</h1>
-        <h2>FullStack Web and Mobile Developer</h2>
-      </div>
+      <h1>JP Earnest</h1>
+      <h2>FullStack Web and Mobile Developer</h2>
     </section>
     <div className="downArrow">
       <a href="#main"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -14,4 +12,4 @@ const Header = () => (
   </div>
 )
 
-export default Header
+export default Landing

@@ -40,7 +40,7 @@ function selectIcon(tech) {
 }
 
 const Technologies = (props) => (
-    <section className="techUsed">
+    <section className="techIconContainer">
       {props.technologies.map((tech, index) =>
           <TechIcon
             techInfo={selectIcon(tech)[1]}

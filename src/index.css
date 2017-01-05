@@ -15,6 +15,17 @@ body {
   color: #222222;
 }
 
+.downArrow {
+  justify-content: flex-end;
+  font-size: 5vmax;
+}
+
+.downArrow a {
+  color: #222222;
+}
+
+
+/*#App*/
 .navFixed {
   position: fixed;
   width: 100%;
@@ -26,7 +37,7 @@ body {
   z-index: 2;
 }
 
-.navbar {
+.navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +56,7 @@ body {
   font-weight: bold;
 }
 
-.header {
+.landingContainer {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -56,40 +67,12 @@ body {
   padding-top: 10vmax;
 }
 
-.downArrow {
-  justify-content: flex-end;
-  font-size: 5vmax;
-}
-
-.downArrow a {
-  color: #222222;
-}
-
-.tech {
-  display: flex;
-  justify-content: space-around;
-  font-size: 2.5vmin;
-  flex-wrap: wrap;
-}
-
-.techDiv {
-  flex: 1;
-  min-width: 300px;
-}
-
-.technologies {
-  height: 5vmin;
-  margin: 0 2vmin 2vmin 2vmin;
-}
-
 h1 {
   font-size: 45px;
 }
 
-.header h4 {
-  font-style: italic;
-}
 
+/*#main*/
 #main {
   font-size: large;
 }
@@ -98,22 +81,30 @@ h1 {
   font-size: 2.5vmax;
 }
 
+
 #aboutMe {
-  margin-top: 6vmax;
   padding-top: 6vmax;
-  padding-bottom: 6vmax;
-  height: 92vh;
-  /*background-color: rgba(34,34,34,0.5);*/
+  min-height: 92vh;
   background-color: #3399ff;
   font-size: large;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.aboutMeTop {
+.aboutMeContentTechContainer {
   display: flex;
-  padding: 0px 50px 50px 50px;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 15vh;
+}
+
+.aboutMeContent {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 6vmax;
 }
 
 .aboutMeText {
@@ -122,29 +113,35 @@ h1 {
   margin: 15px;
   background-color: rgba(255,255,255,0.5);
   border-radius: 5px;
-  font-size: 2vmin;
+  font-size: 2vmax;
   max-width: 700px;
 }
 
-.tech {
+.profilePic {
+  padding: 2vmax;
+  height: 25vmax;
+  border-radius: 5px;
+}
+
+/*.technologies {
+  height: 5vmin;
+  margin: 0 2vmin 2vmin 2vmin;
+}*/
+
+.techContainer {
   display: flex;
   justify-content: space-around;
   font-size: 2.5vmax;
   flex-wrap: wrap;
-  margin-top: -13vh;
 }
 
 .techDiv {
   flex: 1;
   min-width: 300px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
-}
-
-.technologies {
-  height: vmin;
-  margin: 0 2vmin 2vmin 2vmin;
+  align-items: center;
 }
 
 .techLearnedIcon {
@@ -152,38 +149,31 @@ h1 {
   margin: 0 2vmin 2vmin 2vmin;
 }
 
+/*icon flip animation*/
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000px;
 }
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
 .flip-container, .front, .back {
 	width: 320px;
-	/*height: 480px;*/
 }
-
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
-
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
-
 }
-
 /* front pane, placed above back */
 .front {
 	z-index: 2;
@@ -192,35 +182,28 @@ h1 {
   display: flex;
   justify-content: space-around;
 }
-
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
   display: flex;
   justify-content: center;
 }
-
 .back-col {
   display: flex;
   flex-direction: column;
 }
-
-.profilePicContainer {
-  flex: 1;
-  padding: 2vmax;
+.tech-back{
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+.back-icon {
+  font-size: 1vmax;
+}
+.tech-back h6 {
+  margin-top:3px;
+  margin-bottom: 3px;
 }
 
-.profilePic {
-  height: 20vmin;
-  border-radius: 5px;
-}
-
-.aboutMeDownArrow {
-  z-index: 2;
-}
 
 #projects {
   margin-top: 6vmax;
@@ -228,7 +211,7 @@ h1 {
   padding-bottom: 6vmax;
   border-radius: 5px;
   background-color: #eeeeee;
-  height: 92vh;
+  min-height: 92vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -241,14 +224,14 @@ h1 {
   margin-bottom: 3vmax;
 }
 
-.projectDiv {
+.projectContainer {
   width: 23vmax;
   margin: 1vmax;
   box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.2);
 }
 
 .projectImg {
-  height: 15vmax;
+  height: 15vh;
   border-radius: 5px;
 }
 
@@ -263,32 +246,9 @@ h1 {
   padding: 5px;
   height: 10vmax;
   align-items: center;
+  justify-content: center;
 }
 
-.icon {
-  color:black;
-  font-size: 3vmax;
-  padding: 1vmax;
-  padding-bottom: 2vmax;
-}
-
-.icon i:hover {
-  font-size: 3.2vmax;
-}
-
-.tech-back{
-  display: flex;
-  align-items: center;
-}
-
-.back-icon {
-  font-size: 1vmax;
-}
-
-.tech-back h6 {
-  margin-top:3px;
-  margin-bottom: 3px;
-}
 
 #contact {
   margin-top: 6vmax;
@@ -298,17 +258,13 @@ h1 {
   justify-content: flex-end;
 }
 
-#contact h3 {
-  font-size: 2.5vmax;
-}
-
-.contactMe a {
+.contactIcons a {
   color:black;
   font-size: 3vmax;
   padding: 1vmax;
 }
 
-.contactMe i:hover {
+.contactIcons i:hover {
   font-size: 3.2vmax;
 }
 
@@ -323,12 +279,14 @@ h1 {
   margin: 0.5vmax;
 }
 
-.footer {
+#footer {
   padding-bottom: 2vmax;
+  font-size: large;
 }
 
+/*responsive design */
 @media (max-width: 730px) {
-  .aboutMeTop {
+  .aboutMeContent {
     padding: 0;
   }
   #projects {
@@ -343,7 +301,7 @@ h1 {
   #aboutMe {
     height: auto;
   }
-  .projectDiv {
+  .projectContainer {
     width: 90%;
   }
   .projectImg {
@@ -351,7 +309,7 @@ h1 {
   }
 }
 
-.techUsed {
+.techIconContainer {
   display: flex;
   justify-content: space-around;
 }
@@ -385,7 +343,7 @@ h1 {
   #aboutMe {
     height: auto;
   }
-  .aboutMeTop {
+  .aboutMeContent {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -395,7 +353,7 @@ h1 {
   .profilePic {
     height: 20vmax;
   }
-  .tech{
+  .techContainer{
     margin-top:5vmax;
     flex-direction: column;
   }
@@ -404,9 +362,6 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .aboutMeDownArrow {
-    margin-top: 3vmax;
   }
   #main h3 {
     font-size: 3.5vmax;
@@ -420,7 +375,7 @@ h1 {
 }
 
 @media (max-height: 800px){
-  .titleInnerContainer {
+  .title {
     margin: 0 20vmin;
     padding: 0.5vmin;
     background-color: rgba(238,238,238, 0.5);
@@ -428,7 +383,7 @@ h1 {
 }
 
 @media (max-height: 800px) and (orientation: landscape){
-  .header {
+  .landingContainer {
     padding-top: 5vmin;
     height: 95vmin;
   }

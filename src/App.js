@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
 import Nav from './Nav'
-import Header from './Header'
+import Landing from './Landing'
 import AboutMe from './AboutMe'
 import Projects from './Projects'
-import Footer from './Footer'
+import Contact from './Contact'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <section className="headerPic" id="top">
+      <div id="App">
+        <section id="top">
           <Nav />
-          <Header />
+          <Landing />
         </section>
         <section id="main">
-          <div id="mainContainer">
-            <AboutMe />
-            <Projects />
-            <Footer />
-          </div>
+          <AboutMe />
+          <Projects />
+          <Contact />
         </section>
+        <p id="footer">&copy; JP Earnest 2017</p>
       </div>
     );
   }

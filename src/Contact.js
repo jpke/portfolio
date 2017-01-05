@@ -1,10 +1,10 @@
 import React from 'react'
-import ContactMe from './ContactMe'
+import ContactIcons from './ContactIcons'
 
 const Contact = () => (
   <div id="contact">
     <h3>Contact</h3>
-    <ContactMe />
+    <ContactIcons />
     <section id="contactInfo">
       <h4>jp earnest</h4>
       <h4>fredericksburg, va</h4>
