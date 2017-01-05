@@ -172,6 +172,8 @@ h1 {
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+  /*position: static;;*/
+  z-index: 0;
 }
 
 .profilePicContainer {
@@ -185,6 +187,10 @@ h1 {
 .profilePic {
   height: 20vmax;
   border-radius: 5px;
+}
+
+.aboutMeDownArrow {
+  z-index: 2;
 }
 
 #projects {
@@ -239,6 +245,20 @@ h1 {
 
 .icon i:hover {
   font-size: 3.2vmax;
+}
+
+.tech-back{
+  display: flex;
+  align-items: center;
+}
+
+.back-icon {
+  font-size: 1vmax;
+}
+
+.tech-back h6 {
+  margin-top:3px;
+  margin-bottom: 3px;
 }
 
 #contact {
