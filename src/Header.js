@@ -14,8 +14,10 @@ import postgresql from '../public/postgresql.png'
 const Header = () => (
   <div className="header">
     <section className="title">
-      <h1>JP Earnest</h1>
-      <h2>FullStack Web and Mobile Developer</h2>
+      <div className="titleInnerContainer">
+        <h1>JP Earnest</h1>
+        <h2>FullStack Web and Mobile Developer</h2>
+      </div>
     </section>
     <div className="downArrow">
       <a href="#main"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
