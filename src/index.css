@@ -15,10 +15,6 @@ body {
   color: #222222;
 }
 
-#top {
-  height: 100vh;
-}
-
 .navFixed {
   position: fixed;
   width: 100%;
@@ -69,23 +65,6 @@ body {
   color: #222222;
 }
 
-.tech {
-  display: flex;
-  justify-content: space-around;
-  font-size: 2.5vmax;
-  flex-wrap: wrap;
-}
-
-.techDiv {
-  flex: 1;
-  min-width: 300px;
-}
-
-.technologies {
-  height: 5vmax;
-  margin: 0 2vmax 2vmax 2vmax;
-}
-
 h1 {
   font-size: 45px;
 }
@@ -130,6 +109,71 @@ h1 {
   max-width: 700px;
 }
 
+.tech {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5vmax;
+  flex-wrap: wrap;
+  margin-top: -13vh;
+}
+
+.techDiv {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.technologies {
+  height: 5vmin;
+  margin: 0 2vmin 2vmin 2vmin;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	/*height: 480px;*/
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
 .profilePicContainer {
   flex: 1;
   padding: 2vmax;
@@ -165,13 +209,16 @@ h1 {
 .projectDiv {
   width: 23vmax;
   margin: 1vmax;
-  /*box-shadow: 0px 0px 6px rgba(0,0,0, 0.4);*/
   box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.2);
 }
 
 .projectImg {
   height: 15vmax;
   border-radius: 5px;
+}
+
+.projectImg:hover {
+  box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.8);
 }
 
 .projectDescription {
@@ -181,6 +228,17 @@ h1 {
   padding: 5px;
   height: 10vmax;
   align-items: center;
+}
+
+.icon {
+  color:black;
+  font-size: 3vmax;
+  padding: 1vmax;
+  padding-bottom: 2vmax;
+}
+
+.icon i:hover {
+  font-size: 3.2vmax;
 }
 
 #contact {
@@ -288,6 +346,6 @@ h1 {
   }
 }
 
-body.is-os, #footer {
+.is-os {
     background: url(/static/media/minimalism.ea7a4b34.png) no-repeat 50%;
 }
