@@ -2,7 +2,7 @@ import React from 'react'
 import ContactMe from './ContactMe'
 
 const Contact = () => (
-  <div className="contactContainer" id="contact">
+  <div id="contact">
     <h3>Contact</h3>
     <ContactMe />
     <section id="contactInfo">
@@ -10,7 +10,7 @@ const Contact = () => (
       <h4>fredericksburg, va</h4>
       <h4>jp@jpearnest.com</h4>
     </section>
-    <div className="downArrow">
+    <div className="upArrow">
       <a href="#top"><i className="fa fa-chevron-up" aria-hidden="true"></i></a>
     </div>
   </div>

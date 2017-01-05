@@ -4,7 +4,7 @@ import Tech from './Tech'
 
 const AboutMe = () => (
   <div>
-    <div className="aboutMeContainer" id="aboutMe">
+    <div id="aboutMe">
       <h3>About Me</h3>
       <section className="aboutMeTop">
         <div className="aboutMeText">

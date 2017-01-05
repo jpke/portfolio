@@ -5,25 +5,23 @@ import Header from './Header'
 import AboutMe from './AboutMe'
 import Projects from './Projects'
 import Contact from './Contact'
+import Footer from './Footer'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="headerPic" id="top">
+        <section className="headerPic" id="top">
           <Nav />
           <Header />
-        </div>
+        </section>
         <section id="main">
           <div id="mainContainer">
             <AboutMe />
             <Projects />
+            <Footer />
           </div>
         </section>
-        <Contact />
-        <p className="footer">
-          &copy; JP Earnest 2017
-        </p>
       </div>
     );
   }
