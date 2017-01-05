@@ -143,6 +143,11 @@ h1 {
 }
 
 .technologies {
+  height: vmin;
+  margin: 0 2vmin 2vmin 2vmin;
+}
+
+.techLearnedIcon {
   height: 5vmin;
   margin: 0 2vmin 2vmin 2vmin;
 }
@@ -184,6 +189,8 @@ h1 {
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
+  display: flex;
+  justify-content: space-around;
 }
 
 /* back, initially hidden pane */
@@ -342,6 +349,15 @@ h1 {
   .projectImg {
     height: 30vmax;
   }
+}
+
+.techUsed {
+  display: flex;
+  justify-content: space-around;
+}
+
+.techUsedIcon {
+  height: 2.5vmin;
 }
 
 .icon {

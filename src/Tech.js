@@ -1,4 +1,6 @@
 import React from 'react'
+import Technologies from './Technologies'
+
 import html from '../public/html.svg'
 import css from '../public/css.svg'
 import js from '../public/js.svg'
@@ -16,32 +18,39 @@ const Tech = () => (
     <div className="tech">
       <div className="techDiv">
         <h3>Languages</h3>
-        <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div className="flip-container" onTouchStart="this.classList.toggle('hover');">
         	<div className="flipper">
         		<div className="front">
-              <img src={html} className="technologies" alt="html"/>
-              <img src={css} className="technologies" alt="css"/>
-              <img src={js} className="technologies" alt="javascript"/>
-              <img src={R} className="technologies" alt="R"/>
+              <Technologies
+                technologies={["html", "css", "js", "R"]}
+                iconClass="techLearnedIcon"/>
         		</div>
         		<div className="back">
               <div className="back-col">
                 <div className="tech-back">
-                  <img src={html} className="technologies back-icon" alt="html"/>
+                  <Technologies
+                    technologies={["html"]}
+                    iconClass="techLearnedIcon back-icon"/>
                   <h6>HTML5</h6>
                 </div>
                 <div className="tech-back">
-                  <img src={css} className="technologies back-icon" alt="css"/>
+                  <Technologies
+                    technologies={["css"]}
+                    iconClass="techLearnedIcon back-icon"/>
                   <h6>CSS3</h6>
                 </div>
               </div>
               <div className="back-col">
                 <div className="tech-back">
-                <img src={js} className="technologies back-icon" alt="javascript"/>
+                  <Technologies
+                    technologies={["js"]}
+                    iconClass="techLearnedIcon back-icon"/>
                   <h6>JavaScript</h6>
                 </div>
                 <div className="tech-back">
-                  <img src={R} className="technologies back-icon" alt="R"/>
+                  <Technologies
+                    technologies={["R"]}
+                    iconClass="techLearnedIcon back-icon"/>
                   <h6>R</h6>
                 </div>
               </div>
@@ -51,32 +60,39 @@ const Tech = () => (
       </div>
       <div className="techDiv">
         <h3>Frameworks</h3>
-        <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div className="flip-container" onTouchStart="this.classList.toggle('hover');">
         	<div className="flipper">
         		<div className="front">
-              <img src={rct} className="technologies" alt=" react"/>
-              <img src={rctnative} className="technologies" alt=" react-native"/>
-              <img src={node} className="technologies" alt=" node"/>
-              <img src={jquery} className="technologies" alt=" jQuery"/>
+            <Technologies
+              technologies={["react", "react-native", "node", "jquery"]}
+              iconClass="techLearnedIcon"/>
         		</div>
         		<div className="back">
               <div className="back-col">
                 <div className="tech-back">
-                  <img src={rct} className="technologies back-icon" alt="html"/>
+                  <Technologies
+                    technologies={["react"]}
+                    iconClass="techLearnedIcon back-icon"/>
                   <h6>React</h6>
                 </div>
                 <div className="tech-back">
-                  <img src={rctnative} className="technologies back-icon" alt="html"/>
+                  <Technologies
+                    technologies={["react-native"]}
+                    iconClass="techLearnedIcon back-icon"/>
                   <h6>React Native</h6>
                 </div>
               </div>
               <div className="back-col">
                 <div className="tech-back">
-                  <img src={node} className="technologies back-icon" alt="html"/>
+                  <Technologies
+                    technologies={["node"]}
+                    iconClass="techLearnedIcon back-icon"/>
                   <h6>NodeJs</h6>
                 </div>
                 <div className="tech-back">
-                  <img src={jquery} className="technologies back-icon" alt="html"/>
+                  <Technologies
+                    technologies={["jquery"]}
+                    iconClass="techLearnedIcon back-icon"/>
                   <h6>jQuery</h6>
                 </div>
               </div>
@@ -86,20 +102,25 @@ const Tech = () => (
       </div>
       <div className="techDiv">
         <h3>Databases</h3>
-        <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div className="flip-container" onTouchStart="this.classList.toggle('hover');">
           <div className="flipper">
             <div className="front">
-            <img src={mongodb} className="technologies" alt="mongodb"/>
-            <img src={postgresql} className="technologies" alt="postgreSQL"/>
+            <Technologies
+              technologies={["mongo", "postgresql"]}
+              iconClass="techLearnedIcon"/>
             </div>
             <div className="back">
               <div className="back-col">
                 <div className="tech-back">
-                  <img src={mongodb} className="technologies back-icon" alt="html"/>
+                  <Technologies
+                    technologies={["mongo"]}
+                    iconClass="techLearnedIcon back-icon"/>
                   <h6>MongoDB</h6>
                 </div>
                 <div className="tech-back">
-                  <img src={postgresql} className="technologies back-icon" alt="html"/>
+                  <Technologies
+                    technologies={["postgresql"]}
+                    iconClass="techLearnedIcon back-icon"/>
                   <h6>PostgreSQL</h6>
                 </div>
               </div>
