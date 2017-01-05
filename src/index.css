@@ -15,10 +15,6 @@ body {
   color: #222222;
 }
 
-#top {
-  height: 100vh;
-}
-
 .navFixed {
   position: fixed;
   width: 100%;
@@ -72,7 +68,7 @@ body {
 .tech {
   display: flex;
   justify-content: space-around;
-  font-size: 2.5vmax;
+  font-size: 2.5vmin;
   flex-wrap: wrap;
 }
 
@@ -82,8 +78,8 @@ body {
 }
 
 .technologies {
-  height: 5vmax;
-  margin: 0 2vmax 2vmax 2vmax;
+  height: 5vmin;
+  margin: 0 2vmin 2vmin 2vmin;
 }
 
 h1 {
@@ -126,7 +122,7 @@ h1 {
   margin: 15px;
   background-color: rgba(255,255,255,0.5);
   border-radius: 5px;
-  font-size: 2vmax;
+  font-size: 2vmin;
   max-width: 700px;
 }
 
@@ -139,7 +135,7 @@ h1 {
 }
 
 .profilePic {
-  height: 20vmax;
+  height: 20vmin;
   border-radius: 5px;
 }
 
@@ -254,13 +250,19 @@ h1 {
   color: #222222;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 736px) {
+  #aboutMe {
+    height: auto;
+  }
   .aboutMeTop {
     display: flex;
     flex-direction: column-reverse;
   }
   .aboutMeText {
     font-size: 3vmax;
+  }
+  .profilePic {
+    height: 20vmax;
   }
   #main h3 {
     font-size: 3.5vmax;
