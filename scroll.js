@@ -5,7 +5,7 @@ $(document).ready(function(){
   var _isOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
 
   if (_isOS) {
-    $('body').addClass('is-os');
+    $('body, #footer').addClass('is-os');
   }
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
