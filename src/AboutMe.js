@@ -1,5 +1,6 @@
 import React from 'react'
 import profile from '../public/profile.png'
+import Tech from './Tech'
 
 const AboutMe = () => (
   <div>
@@ -14,6 +15,7 @@ const AboutMe = () => (
           <img src={profile} className="profilePic" alt=" profile"/>
         </div>
       </section>
+      <Tech />
     </div>
   </div>
 )

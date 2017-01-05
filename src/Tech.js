@@ -28,8 +28,6 @@ const Tech = () => (
         <img src={jquery} className="technologies" alt=" jQuery"/>
         <img src={node} className="technologies" alt=" node"/>
       </div>
-    </div>
-    <div className="tech">
       <div className="techDiv">
         <h3>Databases</h3>
         <img src={mongodb} className="technologies" alt="mongodb"/>
