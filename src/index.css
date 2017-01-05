@@ -240,6 +240,17 @@ h1 {
   }
 }
 
+.icon {
+  color:black;
+  font-size: 3vmax;
+  padding: 1vmax;
+  padding-bottom: 2vmax;
+}
+
+.icon i:hover {
+  font-size: 3.2vmax;
+}
+
 .upArrow {
   justify-content: flex-end;
   margin-top: 3vh;
