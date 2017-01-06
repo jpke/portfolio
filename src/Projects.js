@@ -1,10 +1,10 @@
 import React from 'react'
 import Project from './Project'
 
-import ewokese from '../public/ewokese.png'
-import ticTacToe from '../public/ticTacToe.png'
-import blogAppReactNative from '../public/blogAppReactNative.png'
-import medicationReminder from '../public/medicationReminder.png'
+import ewokese from '../public/images/ewokese.jpg'
+import ticTacToe from '../public/images/ticTacToe.png'
+import blogAppReactNative from '../public/images/blogAppReactNative.jpg'
+import medicationReminder from '../public/images/medicationReminder.jpg'
 
 const Projects = () => (
   <div id="projects">

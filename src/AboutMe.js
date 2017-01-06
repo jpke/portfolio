@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../public/profile.png'
+import profile from '../public/images/profile.png'
 import Tech from './Tech'
 
 const AboutMe = () => (

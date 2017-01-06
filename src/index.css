@@ -6,7 +6,7 @@ body {
   height: 130vmax;
   font-family: sans-serif;
   text-align: center;
-  background: url("../public/minimalism.png") no-repeat center center fixed;
+  background: url("../public/images/minimalism.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -29,7 +29,7 @@ body {
 #navContainer {
   position: fixed;
   width: 100%;
-  background: url("../public/minimalism.png") no-repeat center center fixed;
+  background: url("../public/images/minimalism.jpg") no-repeat center center fixed;
   background-origin: border-box;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -351,5 +351,5 @@ h2 {
 }
 
 .is-os {
-    background: url(/static/media/minimalism.ea7a4b34.png) no-repeat 50%;
+    background: url(../public/images/minimalism.jpg) no-repeat 50%;
 }

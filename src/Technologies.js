@@ -1,16 +1,16 @@
 import React from 'react'
 import TechIcon from './TechIcon'
 
-import html from '../public/html.svg'
-import css from '../public/css.svg'
-import js from '../public/js.svg'
-import R from '../public/R.png'
-import rct from '../public/react.svg'
-import rctnative from '../public/rn.svg'
-import jquery from '../public/jquery.svg'
-import node from '../public/node.svg'
-import mongodb from '../public/mongodb.svg'
-import postgresql from '../public/postgresql.png'
+import html from '../public/images/html.svg'
+import css from '../public/images/css.svg'
+import js from '../public/images/js.svg'
+import R from '../public/images/R.png'
+import rct from '../public/images/react.svg'
+import rctnative from '../public/images/rn.svg'
+import jquery from '../public/images/jquery.svg'
+import node from '../public/images/node.svg'
+import mongodb from '../public/images/mongodb.svg'
+import postgresql from '../public/images/postgresql.png'
 
 function selectIcon(tech) {
   switch (tech) {
