@@ -379,9 +379,3 @@ h2 {
 .is-os {
     background: url(../public/images/minimalism.jpg) no-repeat 50%;
 }
-
-.ios-projects-layout {
-  /*flex-direction: column;
-  align-items: center;*/
-  /*flex: 1;*/
-}
