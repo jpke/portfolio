@@ -5,7 +5,7 @@ $(document).ready(function(){
   var _isOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
 
   if (_isOS) {
-    $('body, #footer').addClass('is-os');
+    $('body, #contactAndFooter').addClass('is-os');
     $('#projects, #contact').css("margin-top", 0);
   }
   $(function() {
