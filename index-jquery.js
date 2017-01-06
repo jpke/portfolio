@@ -8,9 +8,6 @@ $(document).ready(function(){
     $('#top, #contactAndFooter').addClass('is-os');
     $('body').removeClass('bodyNonIOS');
     $('#projects, #contact').css('margin-top', 0);
-    $('.projectsContainer').addClass('ios-projects-layout');
-    console.log('this ran')
-    // $("body").addClass("dummyClass").removeClass("dummyClass");
   }
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
