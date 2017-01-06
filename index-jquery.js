@@ -5,9 +5,10 @@ $(document).ready(function(){
   var _isOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
 
   if (_isOS) {
-    $('body, "#navContainer, "#contactAndFooter').addClass('is-os');
+    $('body, "#contactAndFooter').addClass('is-os');
     $('#projects, #contact').css("margin-top", 0);
     $('.projectsContainer').addClass('ios-projects-layout')
+    $("body").addClass("dummyClass").removeClass("dummyClass");
   }
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
