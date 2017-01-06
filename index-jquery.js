@@ -5,7 +5,8 @@ $(document).ready(function(){
   var _isOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
 
   if (_isOS) {
-    $('body, #contactAndFooter').addClass('is-os');
+    $('#top, #contactAndFooter').addClass('is-os');
+    $('body').removeClass('bodyNonIOS');
     $('#projects, #contact').css('margin-top', 0);
     $('.projectsContainer').addClass('ios-projects-layout');
     console.log('this ran')
