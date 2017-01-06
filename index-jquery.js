@@ -7,6 +7,7 @@ $(document).ready(function(){
   if (_isOS) {
     $('body, #contactAndFooter').addClass('is-os');
     $('#projects, #contact').css("margin-top", 0);
+    $('.projectsContainer').addClass('ios-projects-layout')
   }
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
