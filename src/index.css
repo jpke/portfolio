@@ -1,8 +1,6 @@
 body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  margin-bottom: -20px;
-  padding: 0;
   height: 130vmax;
   font-family: sans-serif;
   text-align: center;
@@ -42,8 +40,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1vmax;
-  font-size: 2vmax;
+  margin: 1vh;
+  font-size: larger;
 }
 
 .navLink {
@@ -53,13 +51,11 @@ body {
 }
 
 .navLink:hover {
-  font-size: larger;
   font-weight: bold;
 }
 
 .landingContainer {
   height: 100vh;
-  /*margin-top: 100px;*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -77,25 +73,20 @@ h1 {
   font-size: 45px;
 }
 
+h2 {
+  font-size: 35px;
+}
+
 
 /*#main*/
-#main {
-  /*font-size: large;*/
-}
-
-h2 {
-  font-size: 3.5vmax;
-}
-
-
 #aboutMe {
-  padding-top: 6vmax;
-  min-height: 92vh;
+  padding-top: 6vh;
+  min-height: 94vh;
   background-color: #3399ff;
   font-size: large;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .aboutMeContentTechContainer {
@@ -110,7 +101,6 @@ h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 6vmax;
 }
 
 .aboutMeText {
@@ -119,13 +109,13 @@ h2 {
   margin: 15px;
   background-color: rgba(255,255,255,0.5);
   border-radius: 5px;
-  font-size: 2vmax;
+  font-size: larger;
   max-width: 700px;
 }
 
 .profilePic {
   padding: 2vmax;
-  height: 25vmax;
+  height: 250px;
   border-radius: 5px;
 }
 
@@ -154,11 +144,6 @@ h2 {
 .techLearnedIcon {
   height: 5vmin;
   margin: 0 2vmin 2vmin 2vmin;
-}
-
-/*used in projects*/
-.techUsedIcon {
-  height: 2.5vmin;
 }
 
 /*icon flip animation*/
@@ -218,11 +203,11 @@ h2 {
 
 
 #projects {
-  margin-top: 6vmax;
-  padding-top: 6vmax;
+  margin-top: 6vh;
+  padding-top: 6vh;
   border-radius: 5px;
   background-color: #eeeeee;
-  min-height: 92vh;
+  min-height: 94vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -271,6 +256,7 @@ h2 {
 .techUsedIcon {
   height: 22px;
 }
+
 .codeIcon {
   color:black;
   font-size: 30px;
@@ -291,12 +277,15 @@ h2 {
 
 .contactIcons a {
   color:black;
-  font-size: 3vmax;
-  padding: 1vmax;
+  padding: 1vh;
 }
 
 .contactIcons i:hover {
-  font-size: 3.2vmax;
+  font-weight: bold;
+}
+
+.contact {
+  font-size: 35px;
 }
 
 #contactInfo {
@@ -320,9 +309,33 @@ h2 {
   color: #222222;
 }
 
-#footer p{
-  padding-bottom: 2vmax;
-  font-size: large;
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footerBox {
+  flex: 1;
+}
+
+#photoCredit {
+  font-size: small;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#photoCredit p {
+    padding-right: 1vmax;
+}
+
+#photoCredit a {
+  color: #222222;
+  text-decoration: none;
+}
+
+#photoCredit a:hover {
+  text-decoration: underline;
 }
 
 
@@ -347,6 +360,12 @@ h2 {
   .aboutMeContent {
     display: flex;
     flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 414px) {
+  .navBar {
+    font-size: smaller;
   }
 }
 

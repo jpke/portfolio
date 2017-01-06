@@ -4,7 +4,7 @@ import ContactIcons from './ContactIcons'
 const Contact = () => (
   <div id="contact">
     <h2>Contact</h2>
-    <ContactIcons />
+    <ContactIcons className="contact"/>
     <section id="contactInfo">
       <h4>jp earnest</h4>
       <h4>fredericksburg, va</h4>

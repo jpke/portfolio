@@ -9,7 +9,7 @@ const Nav = () => (
           <a href="#projects" className="navLink" title="Sample Projects">Projects</a>
           <a href="#contact" className="navLink" title="Contact Info and Form">Contact</a>
         </div>
-        <ContactIcons />
+        <ContactIcons className="nav"/>
       </section>
   </div>
 )

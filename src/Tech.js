@@ -4,7 +4,7 @@ import Technologies from './Technologies'
 const Tech = () => (
     <div className="techContainer">
       <section className="techDiv">
-        <h3>Languages</h3>
+        <h2>Languages</h2>
         <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
         	<div className="flipper">
         		<section className="front">
@@ -46,7 +46,7 @@ const Tech = () => (
         </div>
       </section>
       <section className="techDiv">
-        <h3>Frameworks</h3>
+        <h2>Frameworks</h2>
         <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
         	<div className="flipper">
         		<section className="front">
@@ -88,7 +88,7 @@ const Tech = () => (
         </div>
       </section>
       <section className="techDiv">
-        <h3>Databases</h3>
+        <h2>Databases</h2>
         <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
           <div className="flipper">
             <section className="front">
