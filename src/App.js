@@ -16,9 +16,11 @@ class App extends Component {
         <section id="main">
           <AboutMe />
           <Projects />
-          <Contact />
         </section>
-        <p id="footer">&copy; JP Earnest 2017</p>
+        <section id="footer">
+          <Contact />
+          <p>&copy; JP Earnest 2017</p>
+        </section>
       </div>
     );
   }

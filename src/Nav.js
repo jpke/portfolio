@@ -2,7 +2,7 @@ import React from 'react'
 import ContactIcons from './ContactIcons'
 
 const Nav = () => (
-  <div className="navFixed">
+  <div id="navContainer">
       <section className="navBar">
         <div id="navLinkContainer">
           <a href="#aboutMe" className="navLink" title="About Me">About Me</a>

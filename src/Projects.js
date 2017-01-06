@@ -8,7 +8,7 @@ import medicationReminder from '../public/medicationReminder.png'
 
 const Projects = () => (
   <div id="projects">
-    <h3>Projects</h3>
+    <h2>Projects</h2>
     <div className="projectsContainer">
       <Project
         title="Learn Ewokese"
@@ -43,7 +43,7 @@ const Projects = () => (
         technologies={["html", "css", "js", "react-native", "node", "mongo"]}
       />
     </div>
-    <div className="downArrow">
+    <div className="downArrow aboutMeArrow">
       <a href="#contact"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
   </div>
