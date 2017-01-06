@@ -1,6 +1,7 @@
 import React from 'react'
 import Project from './Project'
 
+import bulldogquizapp from '../public/images/bulldogquizapp.jpg'
 import ewokese from '../public/images/ewokese.jpg'
 import ticTacToe from '../public/images/ticTacToe.png'
 import blogAppReactNative from '../public/images/blogAppReactNative.jpg'
@@ -10,6 +11,14 @@ const Projects = () => (
   <div id="projects">
     <h2>Projects</h2>
     <div className="projectsContainer">
+      <Project
+        title="Bulldog Quiz App"
+        deployLink="https://jpke.github.io/bulldogquizapp/"
+        image={bulldogquizapp}
+        description="Lighthearted interactive frontend application"
+        github="https://github.com/jpke/bulldogquizapp"
+        technologies={["html", "css", "js", "jquery"]}
+      />
       <Project
         title="Learn Ewokese"
         deployLink="https://enigmatic-refuge-11264.herokuapp.com/#/"
