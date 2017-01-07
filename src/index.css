@@ -88,7 +88,7 @@ h2 {
 /*#main*/
 #aboutMe {
   padding-top: 6vh;
-  min-height: 94vh;
+  min-height: 100vh;
   background-color: #3399ff;
   font-size: large;
   display: flex;
@@ -214,7 +214,7 @@ h2 {
   padding-top: 6vh;
   border-radius: 5px;
   background-color: #eeeeee;
-  min-height: 94vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
