@@ -29,10 +29,10 @@ const Projects = () => (
       />
       <Project
         title="Tic Tac Toe"
-        deployLink="http://localhost:8080/"
+        deployLink="https://jpke.github.io/tic-tac-toe_portfolio/"
         image={ticTacToe}
         description="A modular tic tac toe app, where players can play other players or the computer, and multiple games can be run simultaneously"
-        github="https://github.com/phc5/tic-tac-toe-react"
+        github="https://github.com/jpke/tic-tac-toe_portfolio"
         technologies={["html", "css", "js", "react"]}
       />
       <Project
