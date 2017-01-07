@@ -21,10 +21,10 @@ const Projects = () => (
       />
       <Project
         title="Learn Ewokese"
-        deployLink="https://enigmatic-refuge-11264.herokuapp.com/#/"
+        deployLink="https://jpke.github.io/spaced-rep-deploy/"
         image={ewokese}
         description="Using a spaced-repetitation algorithm, this project teaches words used by Ewoks"
-        github="https://github.com/jpke/spaced-rep-deploy"
+        github="https://github.com/jpke/spaced-rep-deploy/tree/deploy"
         technologies={["html", "css", "js", "react", "node", "mongo"]}
       />
       <Project
