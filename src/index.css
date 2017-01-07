@@ -104,7 +104,6 @@ h2 {
 }
 
 .aboutMeContent {
-  flex: 2;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -120,9 +119,13 @@ h2 {
   max-width: 700px;
 }
 
+.profilePicContainer {
+  padding: 15px;
+
+}
+
 .profilePic {
-  padding: 2vmax;
-  height: 250px;
+  width: 250px;
   border-radius: 5px;
 }
 

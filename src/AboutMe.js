@@ -12,7 +12,9 @@ const AboutMe = () => (
             <p>Coding is one of the activities I enjoy most. I love the creativity and power of it. I love making it clean and clear. Most of all, I love to solve problems through it. I’m amazed by what man and machine can do together.</p>
             <p>When I’m not coding web or mobile applications I teach pathophysiology online, dabble in data science and practice massage therapy and yoga.</p>
           </div>
-          <img src={profile} className="profilePic" alt=" profile"/>
+          <div className="profilePicContainer">
+            <img src={profile} className="profilePic" alt=" profile"/>
+          </div>
         </section>
         <Tech />
       </div>
