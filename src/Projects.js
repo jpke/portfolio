@@ -37,10 +37,10 @@ const Projects = () => (
       />
       <Project
         title="Medication Reminder"
-        deployLink="http://localhost:8080/"
+        deployLink="https://jpke.github.io/medicationReminder_Portfolio"
         image={medicationReminder}
         description="An app to generate email reminders to take a medication at a specific time every week"
-        github="https://github.com/oshirodk/medicationReminder"
+        github="https://github.com/jpke/medicationReminder_Portfolio"
         technologies={["html", "css", "js", "react", "node", "mongo"]}
       />
       <Project
