@@ -32,7 +32,7 @@ const Tech = () => (
                   <Technologies
                     technologies={["js"]}
                     iconClass="techLearnedIcon back-icon"/>
-                  <h6>JavaScript</h6>
+                  <h6>JavaScript/ES6</h6>
                 </div>
                 <div className="tech-back">
                   <Technologies

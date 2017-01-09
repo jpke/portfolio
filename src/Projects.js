@@ -9,10 +9,10 @@ import medicationReminder from '../public/images/medicationReminder.jpg'
 
 const Projects = () => (
   <div id="projects">
-    <h2>Projects</h2>
+    <h2>Apps</h2>
     <div className="projectsContainer">
       <Project
-        title="Bulldog Quiz App"
+        title="Bulldog Quiz"
         deployLink="https://jpke.github.io/bulldogquizapp/"
         image={bulldogquizapp}
         description="Lighthearted interactive frontend application"
@@ -23,7 +23,7 @@ const Projects = () => (
         title="Learn Ewokese"
         deployLink="https://jpke.github.io/spaced-rep-deploy/"
         image={ewokese}
-        description="Using a spaced-repetitation algorithm, this project teaches words used by Ewoks"
+        description="Using a spaced-repetition algorithm, this project teaches words used by Ewoks"
         github="https://github.com/jpke/spaced-rep-deploy/tree/deploy"
         technologies={["html", "css", "js", "react", "node", "mongo"]}
       />
