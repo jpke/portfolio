@@ -329,6 +329,10 @@ h2 {
   flex: 1;
 }
 
+.footerBox p {
+  font-size: smaller;
+}
+
 #photoCredit {
   font-size: small;
   display: flex;
