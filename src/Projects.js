@@ -1,5 +1,6 @@
 import React from 'react'
 import Project from './Project'
+import MobileApp from './MobileApp'
 
 import bulldogquizapp from '../public/images/bulldogquizapp.jpg'
 import ewokese from '../public/images/ewokese.jpg'
@@ -43,10 +44,9 @@ const Projects = () => (
         github="https://github.com/jpke/medicationReminder_Portfolio"
         technologies={["html", "css", "js", "react", "node", "mongo"]}
       />
-      <Project
+    <MobileApp
         title="Blog App"
         deployLink="https://appetize.io/app/zkg2kzmqj909hgxt29q34252tc?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3"
-        image={blogAppReactNative}
         description="A basic blog created with react native for iOS"
         github="https://github.com/jpke/BlogApp"
         technologies={["html", "css", "js", "react-native", "node", "mongo"]}

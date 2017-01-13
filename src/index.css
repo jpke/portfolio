@@ -276,6 +276,19 @@ h2 {
   font-weight: bold;
 }
 
+.mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
 
 #contact {
   margin-top: 6vmax;
