@@ -45,7 +45,7 @@ const Projects = () => (
       />
       <Project
         title="Blog App"
-        deployLink="https://appetize.io/app/zkg2kzmqj909hgxt29q34252tc?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3"
+        deployLink="https://appetize.io/app/jnhahxte9j2wwygntg5jummhjr?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3"
         image={blogAppReactNative}
         description="A basic blog created with react native for iOS"
         github="https://github.com/jpke/BlogApp"
