@@ -58,7 +58,7 @@ body {
 }
 
 .navLink:hover {
-  font-weight: bold;
+  text-decoration: overline;
 }
 
 .landingContainer {
@@ -117,6 +117,11 @@ h2 {
   border-radius: 5px;
   font-size: larger;
   max-width: 700px;
+  text-align: left;
+}
+
+.aboutMeText a {
+  color: #222222;
 }
 
 .profilePicContainer {
@@ -264,12 +269,17 @@ h2 {
 }
 
 .techUsedIcon {
-  height: 22px;
+  height: 30px;
+  padding: 3px;
+}
+
+.techUsedIcon:hover {
+  background: yellow;
 }
 
 .codeIcon {
   color:black;
-  font-size: 30px;
+  font-size: 50px;
   padding: 12px;
 }
 .codeIcon:hover {
@@ -288,10 +298,15 @@ h2 {
 .contactIcons a {
   color:black;
   padding: 1vh;
+  text-decoration: none;
+}
+
+.contactIcons i {
+  font-size: 25px;
 }
 
 .contactIcons i:hover {
-  font-weight: bold;
+    text-decoration: overline;
 }
 
 .contact {
@@ -377,9 +392,18 @@ h2 {
   }
 }
 
+@media screen and (max-width: 639px) {
+  .projectContainer {
+    max-width: 90%;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .navBar {
     font-size: smaller;
+  }
+  .contactIcons i {
+    font-size: 15px;
   }
 }
 
