@@ -5,9 +5,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  /*height: 130vmax;*/
   font-family: 'Fira Sans', sans-serif;
-  /*font-family: sans-serif;*/
   text-align: center;
   z-index: 1;
   /*color: #222222;*/
@@ -24,7 +22,8 @@ a:hover {
 }
 
 .bodyNonIOS {
-  background: url("../public/images/minimalism.jpg") no-repeat center center fixed;
+  /*background: url("../public/images/minimalism.jpg") no-repeat center center fixed;*/
+  background: url("../public/images/tree.svg") no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -45,7 +44,9 @@ a:hover {
 #navContainer {
   position: fixed;
   width: 100%;
-  background: url("../public/images/minimalism.jpg") no-repeat center center fixed;
+  /*background: url("../public/images/minimalism.jpg") no-repeat center center fixed;*/
+  /*background-color: #FEFDF9;*/
+  /*background-color: rgba(254,253,249, 0.1);*/
   background-origin: border-box;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -245,7 +246,8 @@ h2 {
 #projects {
   padding-top: 6vh;
   border-radius: 5px;
-  background-color: #eeeeee;
+  /*background-color: #eeeeee;*/
+  background-color: rgba(238,238,238,0.9);
   min-height: 100vh;
   max-width: 1050px;
   margin: 6vh auto;
@@ -262,12 +264,18 @@ h2 {
   height: auto;
 }
 
+.projects-row {
+  display: flex;
+  justify-content: center;
+  max-width: 1050px;
+}
+
 .projectContainer {
   flex: 1 0 auto;
   margin: 1vmax;
   box-shadow: 0.5px 1.5px 1.5px 1.5px rgba(0,0,0, 0.2);
-  min-width: 300px;
-  max-width: 45%;
+  min-width: 48%;
+  max-width: 48%;
 }
 
 .projectContainer h3 {
@@ -286,6 +294,8 @@ h2 {
 
 .projectDescription {
   display: flex;
+  width: 49vw;
+  max-width: 100%;
   background-color: rgba(255,255,255,0.5);
   border-radius: 5px;
   padding: 5px;
@@ -317,7 +327,7 @@ h2 {
 #contact {
   margin-top: 6vmax;
   display: flex;
-  height: 88vh;
+  height: 90vh;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -421,6 +431,13 @@ h2 {
   .aboutMeText {
     font-size: 3vmax;
   }
+  .aboutMeContent {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .profilePic {
+    width: 300px;
+  }
   .flip-container {
     height: 80px;
   }
@@ -428,14 +445,20 @@ h2 {
 
 @media screen and (max-width: 736px) {
   .aboutMeContent {
-    display: flex;
     flex-direction: column-reverse;
   }
 }
 
 @media screen and (max-width: 639px) {
+  .projects-row {
+    flex-direction: column;
+    align-items: center;
+  }
   .projectContainer {
-    max-width: 90%;
+    max-width: 100vw;
+  }
+  .projectDescription {
+    width: 97vw;
   }
   .tech-top-row {
     display: flex;
@@ -447,11 +470,15 @@ h2 {
   .navBar {
     font-size: smaller;
   }
-  .contactIcons i {
+  .contactIcons a {
     font-size: 15px;
   }
 }
 
 .is-os {
-    background: url(../public/images/minimalism.jpg) no-repeat 50%;
+    /*background: url(../public/images/minimalism.jpg) no-repeat 50%;*/
+    background-image: url("../public/images/tree.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
