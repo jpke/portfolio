@@ -301,7 +301,7 @@ h2 {
 }
 
 .techUsedIcon:hover {
-  background: yellow;
+  border: 2px solid blue;
 }
 
 .codeIcon {
@@ -436,6 +436,10 @@ h2 {
 @media screen and (max-width: 639px) {
   .projectContainer {
     max-width: 90%;
+  }
+  .tech-top-row {
+    display: flex;
+    flex-direction: column;
   }
 }
 
