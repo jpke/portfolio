@@ -9,9 +9,9 @@ const AboutMe = () => (
       <div className="aboutMeContentTechContainer">
         <section className="aboutMeContent">
           <div className="aboutMeText">
-            <p>Hi and thanks for stopping in! I'm completing Thinkful's Fullstack Javascript Web Development Bootcamp, and am looking for opportunities to continue growing as a developer. I've built several apps showcasing my experience. You can check them out below. </p>
-            <p>Coding is one of my favorite activities. I love the creativity it enables and the satisfaction of writing apps into existence.</p>
-            <p>Besides web development, I have a <a href="/JP-Earnest-Resume.pdf" target="_blank" title="Resume">background</a> in health and wellness. I teach pathophysiology online, dabble in data science and practice massage therapy and yoga.</p>
+            <p>Fullstack Javascript Web Developer here, eager for opportunities to work in the <a href="http://mern.io/" title="MERN stack"><strong>MERN</strong></a> stack or to grow into other stacks. You'll see several examples of my work below.</p>
+            <p>Coding is one of my favorite activities. I love the creativity it enables and the satisfaction of writing features into existence. I'm amazed at how we can shape our world through representing and molding it through the electrons in our machines.</p>
+            <p>Besides web development, I have a diverse professional background in massage therapy and online teaching. I'm also an avid yoga practitioner and dabble in machine learning. You can find out more about me in my <a href="/JP-Earnest-Resume.pdf" target="_blank" title="Resume"><strong>resume</strong></a> and even more at <a href="https://www.linkedin.com/in/jp-earnest" title="LinkedIn"><strong>LinkedIn</strong></a>.</p>
           </div>
           <div className="profilePicContainer">
             <img src={profile} className="profilePic" alt=" profile"/>

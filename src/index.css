@@ -6,10 +6,21 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
   /*height: 130vmax;*/
-  font-family: sans-serif;
+  font-family: 'Fira Sans', sans-serif;
+  /*font-family: sans-serif;*/
   text-align: center;
   z-index: 1;
-  color: #222222;
+  /*color: #222222;*/
+    color: #333132;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: overline;
 }
 
 .bodyNonIOS {
@@ -57,12 +68,8 @@ body {
   text-decoration:none;
 }
 
-.navLink:hover {
-  text-decoration: overline;
-}
-
 .landingContainer {
-  height: 100vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -89,7 +96,14 @@ h2 {
 #aboutMe {
   padding-top: 6vh;
   min-height: 100vh;
-  background-color: #3399ff;
+  max-width: 1050px;
+  margin: 0 auto;
+  /*background-color: #3399ff;*/
+  /*background-color: #D7BAE3;*/
+  background-color: rgba(232,209,203,0.9);
+  /*background-color: rgba(204,198,164, 0.9);*/
+  /*background-color: rgba(215, 186, 227, 0.9);*/
+  /*background-color: rgba(232,209,203,0.9);*/
   font-size: large;
   display: flex;
   flex-direction: column;
@@ -113,7 +127,11 @@ h2 {
   flex: 3;
   padding: 15px;
   margin: 15px;
-  background-color: rgba(255,255,255,0.5);
+  /*background-color: rgba(255,255,255,0.5);*/
+  /*background-color: rgba(232,209,203,0.5);*/
+  /*background-color: #D7BAE3;*/
+  /*background-color: rgba(232,209,203,0.9);*/
+  background-color: rgba(204,198,164, 0.9);
   border-radius: 5px;
   font-size: larger;
   max-width: 700px;
@@ -138,6 +156,12 @@ h2 {
   display: flex;
   justify-content: space-around;
   font-size: 2.5vmax;
+  flex-wrap: wrap;
+}
+
+.tech-top-row {
+  display: flex;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -172,6 +196,7 @@ h2 {
 }
 .flip-container, .front, .back {
 	width: 320px;
+  height: 150px;
 }
 /* flip speed goes here */
 .flipper {
@@ -218,11 +243,12 @@ h2 {
 
 
 #projects {
-  margin-top: 6vh;
   padding-top: 6vh;
   border-radius: 5px;
   background-color: #eeeeee;
   min-height: 100vh;
+  max-width: 1050px;
+  margin: 6vh auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -239,9 +265,9 @@ h2 {
 .projectContainer {
   flex: 1 0 auto;
   margin: 1vmax;
-  box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.2);
+  box-shadow: 0.5px 1.5px 1.5px 1.5px rgba(0,0,0, 0.2);
   min-width: 300px;
-  max-width: 300px;
+  max-width: 45%;
 }
 
 .projectContainer h3 {
@@ -249,7 +275,8 @@ h2 {
 }
 
 .projectImg {
-  height: 180px;
+  max-width: 95%;
+  max-height: 291px;
   border-radius: 5px;
 }
 
@@ -293,20 +320,25 @@ h2 {
   height: 88vh;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+}
+
+.contactIcons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 150px;
 }
 
 .contactIcons a {
   color:black;
-  padding: 1vh;
+  margin: 0 10px;
   text-decoration: none;
-}
-
-.contactIcons i {
   font-size: 25px;
 }
 
-.contactIcons i:hover {
-    text-decoration: overline;
+.contactIcons a:hover {
+    /*text-decoration: overline;*/
+    font-weight: bold;
 }
 
 .contact {
@@ -369,6 +401,12 @@ h2 {
 
 
 /*responsive design*/
+@media screen and (max-width: 1050px) {
+  #projects {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 930px) {
   .techLearnedIcon {
     height: 3.5vmax;
@@ -382,6 +420,9 @@ h2 {
   }
   .aboutMeText {
     font-size: 3vmax;
+  }
+  .flip-container {
+    height: 80px;
   }
 }
 

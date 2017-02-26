@@ -8,7 +8,7 @@ const Contact = () => (
     <section id="contactInfo">
       <h4>jp earnest</h4>
       <h4>fredericksburg, va</h4>
-      <h4>jp@jpearnest.com</h4>
+      <a href="mailto:jp@jpearnest.com"><h4>jp@jpearnest.com</h4></a>
     </section>
     <div className="upArrow">
       <a href="#top"><i className="fa fa-chevron-up" aria-hidden="true"></i></a>
