@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.b3615c5c.css",
-  "main.css.map": "static/css/main.b3615c5c.css.map",
-  "main.js": "static/js/main.ff28ad8f.js",
-  "main.js.map": "static/js/main.ff28ad8f.js.map",
+  "main.css": "static/css/main.193b26d7.css",
+  "main.css.map": "static/css/main.193b26d7.css.map",
+  "main.js": "static/js/main.88f50a04.js",
+  "main.js.map": "static/js/main.88f50a04.js.map",
   "static/media/R.png": "static/media/R.4f8a7fb3.png",
   "static/media/blogAppReactNative.jpg": "static/media/blogAppReactNative.cbe56009.jpg",
   "static/media/bulldogquizapp.jpg": "static/media/bulldogquizapp.fed8621f.jpg",
@@ -13,12 +13,12 @@
   "static/media/jquery.svg": "static/media/jquery.e9f22188.svg",
   "static/media/js.svg": "static/media/js.5c241012.svg",
   "static/media/medicationReminder.jpg": "static/media/medicationReminder.887aba0f.jpg",
-  "static/media/minimalism.jpg": "static/media/minimalism.7e34e2a1.jpg",
   "static/media/mongodb.svg": "static/media/mongodb.9cdb4685.svg",
   "static/media/node.svg": "static/media/node.d6cbfa38.svg",
   "static/media/postgresql.png": "static/media/postgresql.98e7c118.png",
   "static/media/profileMe.jpg": "static/media/profileMe.bc14e235.jpg",
   "static/media/react.svg": "static/media/react.c5a7ad98.svg",
   "static/media/rn.svg": "static/media/rn.3ce05427.svg",
-  "static/media/ticTacToe.png": "static/media/ticTacToe.5e5b573e.png"
+  "static/media/ticTacToe.png": "static/media/ticTacToe.5e5b573e.png",
+  "static/media/tree.svg": "static/media/tree.11f070c9.svg"
 }
