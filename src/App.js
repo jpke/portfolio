@@ -23,7 +23,6 @@ class App extends Component {
             <div id="placeholderDiv" className="footerBox"></div>
             <div id="copyRight" className="footerBox"><p>&copy; JP Earnest 2017</p></div>
             <div id="photoCredit" className="footerBox">
-              <p>Background Photo by <a href="https://www.flickr.com/photos/sodaniechea/7043471037/in/photolist-bQ1KhB-bHwvRF-bJpCxP-bxeCTy-byeXzm-bDKJTz">Sodanie Chea</a></p>
             </div>
           </div>
         </section>
