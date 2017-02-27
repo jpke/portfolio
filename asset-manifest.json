@@ -1,9 +1,10 @@
 {
-  "main.css": "static/css/main.3be0e9da.css",
-  "main.css.map": "static/css/main.3be0e9da.css.map",
-  "main.js": "static/js/main.46ab001e.js",
-  "main.js.map": "static/js/main.46ab001e.js.map",
+  "main.css": "static/css/main.98c05ed0.css",
+  "main.css.map": "static/css/main.98c05ed0.css.map",
+  "main.js": "static/js/main.e8cafd04.js",
+  "main.js.map": "static/js/main.e8cafd04.js.map",
   "static/media/R.png": "static/media/R.4f8a7fb3.png",
+  "static/media/appleTree.svg": "static/media/appleTree.b44f9970.svg",
   "static/media/blogAppReactNative.jpg": "static/media/blogAppReactNative.cbe56009.jpg",
   "static/media/bulldogquizapp.jpg": "static/media/bulldogquizapp.fed8621f.jpg",
   "static/media/css.svg": "static/media/css.8dcf2554.svg",
@@ -19,6 +20,5 @@
   "static/media/profileMe.jpg": "static/media/profileMe.bc14e235.jpg",
   "static/media/react.svg": "static/media/react.c5a7ad98.svg",
   "static/media/rn.svg": "static/media/rn.3ce05427.svg",
-  "static/media/ticTacToe.png": "static/media/ticTacToe.5e5b573e.png",
-  "static/media/tree.svg": "static/media/tree.11f070c9.svg"
+  "static/media/ticTacToe.png": "static/media/ticTacToe.5e5b573e.png"
 }
