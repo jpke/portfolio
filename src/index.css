@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  text-decoration: overline;
+  text-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.8);
 }
 
 .bodyNonIOS {
@@ -182,8 +182,8 @@ h2 {
 
 /*used in about*/
 .techLearnedIcon {
-  height: 5vmin;
   margin: 0 2vmin 2vmin 2vmin;
+  height: 45px;
 }
 
 /*icon flip animation*/
@@ -307,11 +307,12 @@ h2 {
 
 .techUsedIcon {
   height: 30px;
-  padding: 3px;
+  /*padding: 3px;*/
 }
 
-.techUsedIcon:hover {
-  border: 2px solid blue;
+.techUsedIcon:hover, .back-icon:hover {
+  box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.8);
+  border-radius: 3px;
 }
 
 .codeIcon {
@@ -344,11 +345,6 @@ h2 {
   margin: 0 10px;
   text-decoration: none;
   font-size: 25px;
-}
-
-.contactIcons a:hover {
-    /*text-decoration: overline;*/
-    font-weight: bold;
 }
 
 .contact {

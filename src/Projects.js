@@ -25,7 +25,7 @@ const Projects = () => (
           title="Learn Ewokese"
           deployLink="https://jpke.github.io/spaced-rep-deploy/"
           image={ewokese}
-          description="Using a spaced-repetition algorithm, this project teaches words used by Ewoks"
+          description="Teaches Ewok words using a spaced-repetition algorithm"
           github="https://github.com/jpke/spaced-rep-deploy/tree/deploy"
           technologies={["html", "css", "js", "react", "node", "mongo"]}
         />
@@ -53,7 +53,7 @@ const Projects = () => (
           title="Bulldog Quiz"
           deployLink="https://jpke.github.io/bulldogquizapp/"
           image={bulldogquizapp}
-          description="Lighthearted interactive frontend application"
+          description="Lighthearted interactive multiple-choice quiz about bulldogs"
           github="https://github.com/jpke/bulldogquizapp"
           technologies={["html", "css", "js", "jquery"]}
         />
