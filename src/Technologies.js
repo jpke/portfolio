@@ -4,13 +4,13 @@ import TechIcon from './TechIcon'
 import html from '../public/images/html.svg'
 import css from '../public/images/css.svg'
 import js from '../public/images/js.svg'
-import R from '../public/images/R.png'
+import R from '../public/images/R.svg'
 import rct from '../public/images/react.svg'
 import rctnative from '../public/images/rn.svg'
 import jquery from '../public/images/jquery.svg'
 import node from '../public/images/node.svg'
 import mongodb from '../public/images/mongodb.svg'
-import postgresql from '../public/images/postgresql.png'
+import postgresql from '../public/images/postgresql.svg'
 
 function selectIcon(tech) {
   switch (tech) {
