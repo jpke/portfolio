@@ -8,22 +8,20 @@ body {
   font-family: 'Fira Sans', sans-serif;
   text-align: center;
   z-index: 1;
-  /*color: #222222;*/
-    color: #333132;
+  color: #000000;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
-a:hover {
+a:hover, .downArrow a:hover, .upArrow a:hover {
   text-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.8);
 }
 
 .bodyNonIOS {
-  /*background: url("../public/images/minimalism.jpg") no-repeat center center fixed;*/
-  background: url("../public/images/appleTree.svg") no-repeat fixed;
+  background: url("../public/images/background.jpg") no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -36,8 +34,8 @@ a:hover {
   font-size: 5vmax;
 }
 
-.downArrow a {
-  color: #222222;
+.downArrow a, .upArrow a {
+    text-shadow: 0.9px 0 0 #CCBBAC, -0.9px 0 0 #CCBBAC, 0 0.9px 0 #CCBBAC, 0 -0.9px 0 #CCBBAC, 1.2px 1.2px #CCBBAC, -1.2px -1.2px 0 #CCBBAC, 1.2px -1.2px 0 #CCBBAC, -1.2px 1.2px 0 #CCBBAC;
 }
 
 
@@ -45,15 +43,6 @@ a:hover {
 #navContainer {
   position: fixed;
   width: 100%;
-  /*background: url("../public/images/minimalism.jpg") no-repeat center center fixed;*/
-  /*background-color: #FEFDF9;*/
-  /*background-color: rgba(254,253,249, 0.1);*/
-  background-origin: border-box;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: 2;
 }
 
 .navBar {
@@ -71,23 +60,18 @@ a:hover {
 }
 
 .landingContainer {
-  height: 85vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .titleContainer{
-  padding-top: 22vmin;
-  margin-left: 500px;
-}
-
-.titleContainer * {
-  text-shadow: 0.5px 0 0 #eeeeee, -0.5px 0 0 #eeeeee, 0 0.5px 0 #eeeeee, 0 -0.5px 0 #eeeeee, 1px 1px #eeeeee, -1px -1px 0 #eeeeee, 1px -1px 0 #eeeeee, -1px 1px 0 #eeeeee;
+  padding-top: 13vmin;
 }
 
 h1 {
-  font-size: 65px;
+  font-size: 85px;
   margin-bottom: 0;
 }
 
@@ -102,12 +86,8 @@ h2 {
   min-height: 100vh;
   max-width: 1050px;
   margin: 0 auto;
-  /*background-color: #3399ff;*/
-  /*background-color: #D7BAE3;*/
-  background-color: rgba(232,209,203,0.9);
-  /*background-color: rgba(204,198,164, 0.9);*/
-  /*background-color: rgba(215, 186, 227, 0.9);*/
-  /*background-color: rgba(232,209,203,0.9);*/
+  background-color: rgba(232,209,203,0.7);
+  border-radius: 5px;
   font-size: large;
   display: flex;
   flex-direction: column;
@@ -118,7 +98,6 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /*margin-bottom: 15vh;*/
 }
 
 .aboutMeContent {
@@ -131,10 +110,6 @@ h2 {
   flex: 3;
   padding: 15px;
   margin: 15px;
-  /*background-color: rgba(255,255,255,0.5);*/
-  /*background-color: rgba(232,209,203,0.5);*/
-  /*background-color: #D7BAE3;*/
-  /*background-color: rgba(232,209,203,0.9);*/
   background-color: rgba(204,198,164, 0.9);
   border-radius: 5px;
   font-size: larger;
@@ -249,8 +224,7 @@ h2 {
 #projects {
   padding-top: 6vh;
   border-radius: 5px;
-  /*background-color: #eeeeee;*/
-  background-color: rgba(238,238,238,0.9);
+  background-color: rgba(238,238,238,0.7);
   min-height: 100vh;
   max-width: 1050px;
   margin: 6vh auto;
@@ -328,11 +302,11 @@ h2 {
 
 
 #contact {
-  margin-top: 6vmax;
+  padding-top: 25vh;
   display: flex;
-  height: 90vh;
+  height: 100vh;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -349,10 +323,6 @@ h2 {
   font-size: 25px;
 }
 
-.contact {
-  font-size: 35px;
-}
-
 #contactInfo {
   margin-top: 1vmax;
   display: flex;
@@ -366,18 +336,15 @@ h2 {
 
 .upArrow {
   justify-content: flex-end;
-  margin-top: 3vh;
+  margin-top: 15vh;
   font-size: 5vmax;
-}
-
-.upArrow a {
-  color: #222222;
 }
 
 #footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  color: #FCAF71;
 }
 
 .footerBox {
@@ -386,25 +353,6 @@ h2 {
 
 .footerBox p {
   font-size: smaller;
-}
-
-#photoCredit {
-  font-size: small;
-  display: flex;
-  justify-content: flex-end;
-}
-
-#photoCredit p {
-    padding-right: 1vmax;
-}
-
-#photoCredit a {
-  color: #222222;
-  text-decoration: none;
-}
-
-#photoCredit a:hover {
-  text-decoration: underline;
 }
 
 
@@ -416,11 +364,11 @@ h2 {
 }
 
 @media screen and (max-width: 930px) {
-  .titleContainer{
-    margin-left: 320px;
+  .landingContainer {
+    height: 90vh;
   }
-  .techLearnedIcon {
-    height: 3.5vmax;
+  .aboutMeContentTechContainer {
+    margin-bottom: 40px;
   }
   .techContainer {
     flex-direction: column;
@@ -444,27 +392,12 @@ h2 {
   }
 }
 
-@media screen and (max-width: 930px) and (orientation: portrait) {
-  .titleContainer {
-    margin-top: 20vh;
-  }
-}
-
 @media screen and (max-width: 736px) and (orientation: portrait) {
-  .titleContainer {
-    margin: 0;
-    padding: 0;
-  }
   h1 {
     font-size: 50px;
   }
   .titleContainer h2 {
-    margin-top: 55vh;
-    margin-bottom: 0;
     font-size: 25px;
-  }
-  #contact {
-    min-height: 100vh;
   }
   .contactContainer h2 {
     font-size: 20px;
@@ -477,7 +410,7 @@ h2 {
     background-size: contain;
   }
   .titleContainer {
-    margin-top: 30vh;
+    margin-top: 20vh;
     padding: 0;
   }
   h1 {
@@ -490,13 +423,10 @@ h2 {
   .aboutMeContent {
     flex-direction: column-reverse;
   }
-  .contactContainer {
-   padding-left: 33vw;
-  }
-  .contactContainer h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
+  /*#footer {
+    color: #000000;
+    text-shadow: 0.9px 0 0 #FCAF71, -0.9px 0 0 #FCAF71, 0 0.9px 0 #FCAF71, 0 -0.9px 0 #FCAF71, 1.2px 1.2px #FCAF71, -1.2px -1.2px 0 #FCAF71, 1.2px -1.2px 0 #FCAF71, -1.2px 1.2px 0 #FCAF71;
+  }*/
 }
 
 @media screen and (max-width: 639px) {
@@ -526,9 +456,8 @@ h2 {
 }
 
 .is-os {
-    /*background: url(../public/images/minimalism.jpg) no-repeat 50%;*/
-    background-image: url("../public/images/appleTree.svg");
+    background-image: url("../public/images/background.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
