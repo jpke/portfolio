@@ -220,6 +220,26 @@ h2 {
   margin-bottom: 3px;
 }
 
+#posts {
+  padding: 6vh 20px;
+  min-height: 100vh;
+  max-width: 1050px;
+  margin: 6vh auto;
+  background-color: rgba(232,209,203,0.7);
+  border-radius: 5px;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post {
+  padding: 15px;
+  margin-top: 3vh;
+  background-color: rgba(204,198,164, 0.9);
+  border-radius: 5px;
+  text-align: left;
+}
 
 #projects {
   padding-top: 6vh;
