@@ -246,7 +246,17 @@ h2 {
 }
 
 .postDate {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.postDateDescription {
+  margin-right: 10px;
+}
+
+.dateTimes {
   text-align: right;
+  margin-right: 0;
 }
 
 #projects {

@@ -15,9 +15,16 @@ const BlogPosts = (props) => {
           </h3>
         </div>
         <div className="postDate">
-          created:  &nbsp; {formatAMPM(item.date)}
-          <br></br>
-          {item.modified && "updated: " + formatAMPM(item.modified)}
+          <div className="postDateDescription">
+            created:
+            <br></br>
+            {item.modified && "updated:"}
+          </div>
+          <div className="dateTimes">
+            {formatAMPM(item.date)}
+            <br></br>
+            {item.modified && formatAMPM(item.modified)}
+          </div>
         </div>
         {htmlToReactParser.parse(item.content)}
       </div>
