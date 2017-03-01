@@ -67,6 +67,44 @@ a:hover, .downArrow a:hover, .upArrow a:hover, #welcome:hover {
   justify-content: space-between;
 }
 
+.appear-enter {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in
+}
+
+.appear-enter.appear-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in
+}
+
+/*.appear-leave {
+  opacity: 1;
+}
+
+.appear-leave.appear-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}*/
+
+.welcome-enter {
+  opacity: 0.01;
+  transition: opacity 2500ms ease-in
+}
+
+.welcome-enter.welcome-enter-active {
+  opacity: 1;
+  transition: opacity 2500ms ease-in
+}
+
+/*.appear-leave {
+  opacity: 1;
+}
+
+.appear-leave.appear-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}*/
+
 .titleContainer{
   padding-top: 13vmin;
 }

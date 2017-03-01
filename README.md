@@ -1,4 +1,9 @@
 ##ToDo:
+- Portfolio Page
+  - Optimize load time
+    - get rid of jquery
+    - get rid of fa (save svg icons to file in page)
+
 - Bulldog Quiz App
  - Write tests?
 
@@ -29,4 +34,3 @@
   - Delete user
   - Filter posts by user
  - Write tests
-# ideas

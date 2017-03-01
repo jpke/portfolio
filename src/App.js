@@ -32,11 +32,13 @@ class App extends Component {
     this.setState({view: event.target.className})
   }
   componentDidUpdate(prevProps, prevState) {
-    if(prevState.view != this.state.view) {
+    if(prevState.view !== this.state.view) {
       let bodyRect = document.body.getBoundingClientRect(),
       elemRect = document.getElementById("main").getBoundingClientRect(),
       offset   = elemRect.top - bodyRect.top;
-      window.scrollTo(0, offset);
+      if(pageYOffset > offset) {
+        window.scrollTo(0, offset);
+      }
     }
   }
   render() {
