@@ -35,8 +35,8 @@ const BlogPosts = (props) => {
     <div className="postsContainer">
       <h2>Blog</h2>
       <div className="sectionNav">
-        <button id="apps" onClick={(e) => {props.toggleView(e)}}>Apps</button>
-        <button id="about" onClick={(e) => {props.toggleView(e)}}>About</button>
+        <button className="apps" onClick={(e) => {props.toggleView(e)}}>Apps</button>
+        <button className="about" onClick={(e) => {props.toggleView(e)}}>About</button>
       </div>
       {posts}
     </div>

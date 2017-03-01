@@ -29,7 +29,15 @@ class App extends Component {
     });
   }
   toggleView(event) {
-    this.setState({view: event.target.id})
+    console.log(event.target.className)
+    this.setState({view: event.target.className})
+  }
+  componentDidUpdate() {
+    let bodyRect = document.body.getBoundingClientRect(),
+    elemRect = document.getElementById("main").getBoundingClientRect(),
+    offset   = elemRect.top - bodyRect.top;
+    window.scrollTo(0, offset);
+    console.log('Element is ' + offset + ' vertical pixels from <body>');
   }
 
   render() {

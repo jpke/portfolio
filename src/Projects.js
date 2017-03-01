@@ -12,8 +12,8 @@ const Projects = (props) => (
   <div>
     <h2>Apps</h2>
     <div className="sectionNav">
-      <button id="about" onClick={(e) => {props.toggleView(e)}}>About</button>
-      <button id="blog" onClick={(e) => {props.toggleView(e)}}>Blog</button>
+      <button className="about" onClick={(e) => {props.toggleView(e)}}>About</button>
+      <button className="blog" onClick={(e) => {props.toggleView(e)}}>Blog</button>
     </div>
     <div className="projectsContainer">
       <section className="projects-row">

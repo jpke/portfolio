@@ -8,7 +8,7 @@ const Landing = () => (
     </section>
     <div className="downArrow">
       <h2 id="welcome"><a href="#main">Welcome</a></h2>
-      <a href="#main"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
+      <a id="downToSection" href="#main"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
   </div>
 )

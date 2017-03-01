@@ -6,8 +6,8 @@ const AboutMe = (props) => (
   <div>
     <h2>About</h2>
     <div className="sectionNav">
-      <button id="apps" onClick={(e) => {props.toggleView(e)}}>Apps</button>
-      <button id="blog" onClick={(e) => {props.toggleView(e)}}>Blog</button>
+      <button className="apps" onClick={(e) => {props.toggleView(e)}}>Apps</button>
+      <button className="blog" onClick={(e) => {props.toggleView(e)}}>Blog</button>
     </div>
     <div className="aboutMeContentTechContainer">
       <section className="aboutMeContent">
