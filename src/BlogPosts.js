@@ -1,6 +1,8 @@
 import React from 'react'
-import HtmlToReactParser from 'html-to-react';
-const htmlToReactParser = new HtmlToReactParser.Parser();
+import HtmlToReactParser from 'html-to-react'
+import formatAMPM from './utils/dateFormatter'
+
+const htmlToReactParser = new HtmlToReactParser.Parser()
 
 const BlogPosts = (props) => {
   let posts;
@@ -8,10 +10,14 @@ const BlogPosts = (props) => {
     return (
       <div className="post" key={index}>
         <div className="postTitle">
-          {htmlToReactParser.parse(item.title, item.date, item.content)}
+          <h3>
+            {htmlToReactParser.parse(item.title, item.date, item.content)}
+          </h3>
         </div>
         <div className="postDate">
-          {htmlToReactParser.parse(item.date)}
+          created:  &nbsp; {formatAMPM(item.date)}
+          <br></br>
+          {item.modified && "updated: " + formatAMPM(item.modified)}
         </div>
         {htmlToReactParser.parse(item.content)}
       </div>

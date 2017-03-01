@@ -241,6 +241,14 @@ h2 {
   text-align: left;
 }
 
+.postTitle h3 {
+  text-align: center;
+}
+
+.postDate {
+  text-align: right;
+}
+
 #projects {
   padding-top: 6vh;
   border-radius: 5px;
