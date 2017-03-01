@@ -14,7 +14,7 @@ class App extends Component {
       blogPosts: false,
       view: "about"
     };
-    fetch("https://public-api.wordpress.com/rest/v1.1/sites/jpearnestblog.wordpress.com/posts/?number=2&pretty=true")
+    fetch("https://public-api.wordpress.com/rest/v1.1/sites/jpearnestblog.wordpress.com/posts")
     .then(response => {
       if(response.status !== 200) {
         console.log("error in fetching blog posts: ", response);
