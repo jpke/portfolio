@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import fetch from 'isomorphic-fetch';
 import Nav from './Nav'
 import Landing from './Landing'
@@ -50,12 +51,17 @@ class App extends Component {
         </section>
         <section id="main">
           <div id="sectionContainer">
-            {this.state.view === "about" &&
-              <AboutMe toggleView={this.toggleView.bind(this)} />}
-            {this.state.view === "apps" &&
-              <Projects toggleView={this.toggleView.bind(this)} />}
-            {this.state.view === "blog" &&
-              <BlogPosts toggleView={this.toggleView.bind(this)} blogPosts={this.state.blogPosts} />}
+            <ReactCSSTransitionGroup
+              transitionName="toggle"
+              transitionEnterTimeout={400}
+              transitionLeaveTimeout={400}>
+                {this.state.view === "about" &&
+                  <AboutMe toggleView={this.toggleView.bind(this)} />}
+                {this.state.view === "apps" &&
+                  <Projects toggleView={this.toggleView.bind(this)} />}
+                {this.state.view === "blog" &&
+                  <BlogPosts toggleView={this.toggleView.bind(this)} blogPosts={this.state.blogPosts} />}
+            </ReactCSSTransitionGroup>
           <div className="downArrow">
             <a href="#contact"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
