@@ -14,7 +14,6 @@ $(document).ready(function(){
     //smooth scroll
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        console.log("this: ", this, "hash: ", this.hash);
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
