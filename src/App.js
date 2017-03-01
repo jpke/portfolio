@@ -29,17 +29,16 @@ class App extends Component {
     });
   }
   toggleView(event) {
-    console.log(event.target.className)
     this.setState({view: event.target.className})
   }
-  componentDidUpdate() {
-    let bodyRect = document.body.getBoundingClientRect(),
-    elemRect = document.getElementById("main").getBoundingClientRect(),
-    offset   = elemRect.top - bodyRect.top;
-    window.scrollTo(0, offset);
-    console.log('Element is ' + offset + ' vertical pixels from <body>');
+  componentDidUpdate(prevProps, prevState) {
+    if(prevState.view != this.state.view) {
+      let bodyRect = document.body.getBoundingClientRect(),
+      elemRect = document.getElementById("main").getBoundingClientRect(),
+      offset   = elemRect.top - bodyRect.top;
+      window.scrollTo(0, offset);
+    }
   }
-
   render() {
     return (
       <div id="App">
