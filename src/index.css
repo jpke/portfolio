@@ -5,6 +5,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
+  /*padding: 3px;*/
   font-family: 'Fira Sans', sans-serif;
   text-align: center;
   z-index: 1;
@@ -16,7 +17,7 @@ a {
   color: #000000;
 }
 
-a:hover, .downArrow a:hover, .upArrow a:hover {
+a:hover, .downArrow a:hover, .upArrow a:hover, #welcome:hover {
   text-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.8);
 }
 
@@ -34,7 +35,7 @@ a:hover, .downArrow a:hover, .upArrow a:hover {
   font-size: 5vmax;
 }
 
-.downArrow a, .upArrow a {
+.downArrow .fa, .upArrow a {
     text-shadow: 0.9px 0 0 #CCBBAC, -0.9px 0 0 #CCBBAC, 0 0.9px 0 #CCBBAC, 0 -0.9px 0 #CCBBAC, 1.2px 1.2px #CCBBAC, -1.2px -1.2px 0 #CCBBAC, 1.2px -1.2px 0 #CCBBAC, -1.2px 1.2px 0 #CCBBAC;
 }
 
@@ -60,7 +61,7 @@ a:hover, .downArrow a:hover, .upArrow a:hover {
 }
 
 .landingContainer {
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -79,19 +80,44 @@ h2 {
   font-size: 35px;
 }
 
+#welcome {
+  margin: 2vh;
+}
 
 /*#main*/
-#aboutMe {
-  padding-top: 6vh;
+#sectionContainer {
   min-height: 100vh;
   max-width: 1050px;
   margin: 0 auto;
   background-color: rgba(232,209,203,0.7);
   border-radius: 5px;
+  border: 3px solid rgba(0,0,0,0);
+  /*border: 3px solid black;*/
   font-size: large;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#sectionContainer h2 {
+  margin-bottom: 0;
+}
+
+.sectionNav {
+  margin: 0 15px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionNav button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #134355;
+  background-color: rgba(251,239,223,0.3);
+  color: #000000;
+  font-size: 20px;
 }
 
 .aboutMeContentTechContainer {
@@ -234,11 +260,13 @@ h2 {
 }
 
 .post {
-  padding: 15px;
-  margin-top: 3vh;
+  padding: 25px;
+  max-width: 900px;
+  margin: 3vh auto;
   background-color: rgba(204,198,164, 0.9);
   border-radius: 5px;
   text-align: left;
+  overflow: hidden;
 }
 
 .postTitle h3 {
@@ -259,16 +287,10 @@ h2 {
   margin-right: 0;
 }
 
-#projects {
-  padding-top: 6vh;
-  border-radius: 5px;
-  background-color: rgba(238,238,238,0.7);
-  min-height: 100vh;
-  max-width: 1050px;
-  margin: 6vh auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+p img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .projectsContainer {
@@ -288,6 +310,7 @@ h2 {
 .projectContainer {
   flex: 1 0 auto;
   margin: 1vmax;
+  padding: 6px;
   box-shadow: 0.5px 1.5px 1.5px 1.5px rgba(0,0,0, 0.2);
   min-width: 48%;
   max-width: 48%;
@@ -395,16 +418,7 @@ h2 {
 
 
 /*responsive design*/
-@media screen and (max-width: 1050px) {
-  #projects {
-    margin: 0 auto;
-  }
-}
-
 @media screen and (max-width: 930px) {
-  .landingContainer {
-    height: 90vh;
-  }
   .aboutMeContentTechContainer {
     margin-bottom: 40px;
   }
@@ -430,12 +444,24 @@ h2 {
   }
 }
 
+@media screen and (max-width: 930px) and (orientation:portrait) {
+  .landingContainer {
+    height: 92vh;
+  }
+}
+
 @media screen and (max-width: 736px) and (orientation: portrait) {
+  .landingContainer {
+    height: 90vh;
+  }
   h1 {
     font-size: 50px;
   }
   .titleContainer h2 {
     font-size: 25px;
+  }
+  .postDate {
+    justify-content: flex-start;
   }
   .contactContainer h2 {
     font-size: 20px;
@@ -467,7 +493,7 @@ h2 {
   }*/
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 667px) {
   .projects-row {
     flex-direction: column;
     align-items: center;

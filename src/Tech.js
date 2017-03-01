@@ -10,7 +10,7 @@ const Tech = () => (
         	<div className="flipper">
         		<section className="front">
               <Technologies
-                technologies={["html", "css", "js", "R"]}
+                technologies={["html", "css", "javascript", "R"]}
                 iconClass="techLearnedIcon"/>
         		</section>
         		<section className="back">
@@ -31,7 +31,7 @@ const Tech = () => (
               <div className="back-col">
                 <div className="tech-back">
                   <Technologies
-                    technologies={["js"]}
+                    technologies={["javascript"]}
                     iconClass="techLearnedIcon back-icon"/>
                   <h6>JavaScript/ES6</h6>
                 </div>

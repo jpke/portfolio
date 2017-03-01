@@ -8,9 +8,13 @@ import ticTacToe from '../public/images/ticTacToe.png'
 import blogAppReactNative from '../public/images/blogAppReactNative.jpg'
 import medicationReminder from '../public/images/medicationReminder.jpg'
 
-const Projects = () => (
-  <div id="projects">
+const Projects = (props) => (
+  <div>
     <h2>Apps</h2>
+    <div className="sectionNav">
+      <button id="about" onClick={(e) => {props.toggleView(e)}}>About</button>
+      <button id="blog" onClick={(e) => {props.toggleView(e)}}>Blog</button>
+    </div>
     <div className="projectsContainer">
       <section className="projects-row">
         <Project
@@ -19,7 +23,7 @@ const Projects = () => (
           image={eLearn}
           description="Online learning platform delivering course files and interactive quizzes while tracking student performance"
           github="https://github.com/jpke/elearn"
-          technologies={["html", "css", "js", "react", "node", "mongo"]}
+          technologies={["html", "css", "javascript", "react", "node", "mongo"]}
         />
         <Project
           title="Learn Ewokese"
@@ -27,7 +31,7 @@ const Projects = () => (
           image={ewokese}
           description="Teaches Ewok words using a spaced-repetition algorithm"
           github="https://github.com/jpke/spaced-rep-deploy/tree/deploy"
-          technologies={["html", "css", "js", "react", "node", "mongo"]}
+          technologies={["html", "css", "javascript", "react", "node", "mongo"]}
         />
       </section>
       <section className="projects-row">
@@ -37,7 +41,7 @@ const Projects = () => (
           image={blogAppReactNative}
           description="A basic blog created with react native for iOS"
           github="https://github.com/jpke/BlogApp"
-          technologies={["html", "css", "js", "react-native", "node", "mongo"]}
+          technologies={["html", "css", "javascript", "react-native", "node", "mongo"]}
         />
         <Project
           title="Medication Reminder"
@@ -45,7 +49,7 @@ const Projects = () => (
           image={medicationReminder}
           description="An app to generate email reminders to take a medication at a specific time every week"
           github="https://github.com/jpke/medicationReminder_Portfolio"
-          technologies={["html", "css", "js", "react", "node", "mongo"]}
+          technologies={["html", "css", "javascript", "react", "node", "mongo"]}
         />
       </section>
       <section className="projects-row">
@@ -55,7 +59,7 @@ const Projects = () => (
           image={bulldogquizapp}
           description="Lighthearted interactive multiple-choice quiz about bulldogs"
           github="https://github.com/jpke/bulldogquizapp"
-          technologies={["html", "css", "js", "jquery"]}
+          technologies={["html", "css", "javascript", "jquery"]}
         />
         <Project
           title="Tic Tac Toe"
@@ -63,12 +67,9 @@ const Projects = () => (
           image={ticTacToe}
           description="A modular tic tac toe app, where players can play other players or the computer, and multiple games can be run simultaneously"
           github="https://github.com/jpke/tic-tac-toe_portfolio"
-          technologies={["html", "css", "js", "react"]}
+          technologies={["html", "css", "javascript", "react"]}
         />
       </section>
-    </div>
-    <div className="downArrow aboutMeArrow">
-      <a href="#contact"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
   </div>
 )

@@ -7,6 +7,7 @@ const Landing = () => (
       <h2>FullStack Web Developer</h2>
     </section>
     <div className="downArrow">
+      <h2 id="welcome"><a href="#main">Welcome</a></h2>
       <a href="#main"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
   </div>

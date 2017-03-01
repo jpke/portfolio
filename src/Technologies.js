@@ -18,7 +18,7 @@ function selectIcon(tech) {
       return [html, "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"]
     case 'css':
       return [css, "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"]
-    case 'js':
+    case 'javascript':
       return [js, "https://developer.mozilla.org/en-US/docs/Web/JavaScript"]
     case 'R':
       return [R, "https://www.r-project.org/"]

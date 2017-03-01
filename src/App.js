@@ -11,7 +11,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      blogPosts: false
+      blogPosts: false,
+      view: "about"
     };
     fetch("https://public-api.wordpress.com/rest/v1.1/sites/jpearnestblog.wordpress.com/posts/?number=2&pretty=true")
     .then(response => {
@@ -27,6 +28,10 @@ class App extends Component {
       });
     });
   }
+  toggleView(event) {
+    this.setState({view: event.target.id})
+  }
+
   render() {
     return (
       <div id="App">
@@ -35,9 +40,17 @@ class App extends Component {
           <Landing />
         </section>
         <section id="main">
-          <AboutMe />
-          <BlogPosts blogPosts={this.state.blogPosts} />
-          <Projects />
+          <div id="sectionContainer">
+            {this.state.view === "about" &&
+              <AboutMe toggleView={this.toggleView.bind(this)} />}
+            {this.state.view === "apps" &&
+              <Projects toggleView={this.toggleView.bind(this)} />}
+            {this.state.view === "blog" &&
+              <BlogPosts toggleView={this.toggleView.bind(this)} blogPosts={this.state.blogPosts} />}
+          <div className="downArrow">
+            <a href="#contact"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
+          </div>
+        </div>
         </section>
         <section id="contactAndFooter">
           <Contact />

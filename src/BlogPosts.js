@@ -7,11 +7,12 @@ const htmlToReactParser = new HtmlToReactParser.Parser()
 const BlogPosts = (props) => {
   let posts;
   if(props.blogPosts) posts = props.blogPosts.map((item, index) => {
+    // if(index === 0) return;
     return (
       <div className="post" key={index}>
         <div className="postTitle">
           <h3>
-            {htmlToReactParser.parse(item.title, item.date, item.content)}
+            {htmlToReactParser.parse(item.title)}
           </h3>
         </div>
         <div className="postDate">
@@ -31,11 +32,13 @@ const BlogPosts = (props) => {
     )
   })
   return (
-    <div id="posts">
-      <div className="postsContainer">
-        <h2>Blog</h2>
-        {posts}
+    <div className="postsContainer">
+      <h2>Blog</h2>
+      <div className="sectionNav">
+        <button id="apps" onClick={(e) => {props.toggleView(e)}}>Apps</button>
+        <button id="about" onClick={(e) => {props.toggleView(e)}}>About</button>
       </div>
+      {posts}
     </div>
   )
 }
