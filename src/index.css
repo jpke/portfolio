@@ -191,6 +191,10 @@ h2 {
   font-size: 20px;
 }
 
+.sectionNav button:hover {
+  background-color: rgba(251,239,223,1);
+}
+
 .aboutMeContentTechContainer {
   display: flex;
   flex-direction: column;
@@ -362,7 +366,7 @@ p img {
 .projectsContainer {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   height: auto;
 }
@@ -376,7 +380,7 @@ p img {
 .projectContainer {
   flex: 1 0 auto;
   margin: 0.5vmin;
-  padding: 6px;
+  padding: 12px;
   box-shadow: 0.5px 1.5px 1.5px 1.5px rgba(0,0,0, 0.2);
   min-width: 48%;
   max-width: 48%;
@@ -384,6 +388,13 @@ p img {
 
 .projectContainer h3 {
   font-size: 22px;
+}
+
+.minHeightRow .projectImgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 291px;
 }
 
 .projectImg {
@@ -397,9 +408,10 @@ p img {
 }
 
 .projectDescription {
+  margin: 6px auto;
   display: flex;
-  width: 49vw;
-  max-width: 100%;
+  /*width: 49vw;*/
+  max-width: 94%;
   background-color: rgba(255,255,255,0.9);
   border-radius: 5px;
   padding: 5px;
@@ -410,12 +422,12 @@ p img {
 }
 
 .techUsedIcon {
+  margin-top: 12px;
   height: 30px;
 }
 
 .techUsedIcon:hover, .back-icon:hover {
-  box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.8);
-  border-radius: 3px;
+  transform: translateY(-3px);
 }
 
 .codeIcon {
@@ -563,19 +575,35 @@ p img {
 }
 
 @media screen and (max-width: 667px) {
+  .projectsContainer {
+    align-items: stretch;
+    width: 100%;
+  }
   .projects-row {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .projectContainer {
-    max-width: 100vw;
+    max-width: none;
+    width: 100%;
+    flex: 0 1 auto;
+  }
+  .projectImgContainer {
+    min-height: none;
   }
   .projectDescription {
-    width: 97vw;
+    max-width: 450px;
   }
   .tech-top-row {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .projectDescription {
+    max-width: 94%;
   }
 }
 

@@ -34,7 +34,7 @@ const Projects = (props) => (
           technologies={["html", "css", "javascript", "react", "node", "mongo"]}
         />
       </section>
-      <section className="projects-row">
+      <section className="projects-row minHeightRow">
         <Project
           title="Blog App"
           deployLink="https://appetize.io/app/jnhahxte9j2wwygntg5jummhjr?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3"
