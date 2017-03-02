@@ -377,7 +377,7 @@ p img {
   max-width: 1050px;
 }
 
-.projectContainer, .moreProjectInfoContainer {
+.projectContainer, #moreProjectInfoContainer {
   flex: 1 0 auto;
   margin: 0.5vmin;
   padding: 12px;
@@ -390,7 +390,7 @@ p img {
   font-size: 22px;
 }
 
-.moreProjectInfoContainer {
+#moreProjectInfoContainer {
   position: absolute;
   top: 110vh;
   left: 50%;

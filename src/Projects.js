@@ -24,11 +24,11 @@ const Projects = (props) => (
           description="Online learning platform delivering course files and interactive quizzes while tracking student performance"
           github="https://github.com/jpke/elearn"
           technologies={["html", "css", "javascript", "react", "node", "mongo"]}
-          moreInfo=[{
+          moreInfo={{
             timespan: "three weeks",
             responsibilities: ["entire app - solo project"],
             learned: ["developed data structure and flow for relatively complex app", "learned necessity of clearly planning app architecture before starting to code", "gained experience with CRUD operations in mongoDB", "learned how to use BOX api", "learned how to accept form input into redux and use it to edit app data"]
-          }]
+          }}
           showMoreInfo={props.showMoreInfo}
         />
         <Project
@@ -38,11 +38,11 @@ const Projects = (props) => (
           description="Teaches Ewok words using a spaced-repetition algorithm"
           github="https://github.com/jpke/spaced-rep-deploy/tree/deploy"
           technologies={["html", "css", "javascript", "react", "node", "mongo"]}
-          moreInfo=[{
+          moreInfo={{
             timespan: "one week",
             responsibilities: ["implemented Google OAuth 2.0", "helped build react app", "lead team - facillitated discussion and formed consensus", "pioneered working in new (to us) build system, Create React App"],
             learned: ["learned to manage application state with redux", "deployment protocol varies with build system, understand requirements before committing to system"]
-          }]
+          }}
           showMoreInfo={props.showMoreInfo}
         />
       </section>
@@ -54,11 +54,11 @@ const Projects = (props) => (
           description="A basic blog created with react native for iOS"
           github="https://github.com/jpke/BlogApp"
           technologies={["html", "css", "javascript", "react-native", "node", "mongo"]}
-          moreInfo=[{
+          moreInfo={{
             timespan: "one week",
             responsibilities: ["entire app - solo project"],
             learned: ["gained experience working in react native", "successfully deployed app build to appetize"]
-          }]
+          }}
           showMoreInfo={props.showMoreInfo}
         />
         <Project
@@ -68,11 +68,11 @@ const Projects = (props) => (
           description="An app to generate email reminders to take a medication at a specific time every week"
           github="https://github.com/jpke/medicationReminder_Portfolio"
           technologies={["html", "css", "javascript", "react", "node", "mongo"]}
-          moreInfo=[{
+          moreInfo={{
             timespan: "one week",
             responsibilities: ["serverside REST api"],
             learned: ["gained experience building a REST api", "saw the importance of clearly communicating api endpoint requirements between frontend and backend team"]
-          }]
+          }}
           showMoreInfo={props.showMoreInfo}
         />
       </section>
@@ -84,11 +84,11 @@ const Projects = (props) => (
           description="Lighthearted interactive multiple-choice quiz about bulldogs"
           github="https://github.com/jpke/bulldogquizapp"
           technologies={["html", "css", "javascript", "jquery"]}
-          moreInfo=[{
+          moreInfo={{
             timespan: "one or two days",
             responsibilities: ["entire app - pair coded it with partner"],
             learned: ["how to use jQuery to listen to and respond to user actions", "how to initialize, change and reset application state using jQuery", "gained experience styling app with CSS"]
-          }]
+          }}
           showMoreInfo={props.showMoreInfo}
         />
         <Project
@@ -98,11 +98,11 @@ const Projects = (props) => (
           description="A modular tic tac toe app, where players can play other players or the computer, and multiple games can be run simultaneously"
           github="https://github.com/jpke/tic-tac-toe_portfolio"
           technologies={["html", "css", "javascript", "react"]}
-          moreInfo=[{
+          moreInfo={{
             timespan: "one day",
             responsibilities: ["entire app - pair coded it with partner"],
             learned: ["gained experience working in react", "built a modular app, where an indeterminate number of components could be created by user", "learned how to manage application state using react only"]
-          }]
+          }}
           showMoreInfo={props.showMoreInfo}
         />
       </section>
