@@ -139,6 +139,37 @@ h2 {
   transition: opacity 400ms ease-in;
 }
 
+.fa-chevron-down {
+  animation: 2s infinite bounce;
+  animation-delay: 2.5s;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+	40% {
+    transform: translateY(-15px);
+  }
+	60% {
+    transform: translateY(-10px);
+  }
+}
+
+.fa-chevron-up {
+  animation: 5s infinite pulse;
+}
+
+@keyframes pulse {
+  25%, 75% {
+    font-size: 45px;
+  }
+  50% {
+    font-size: 50px;
+  }
+}
+
+
 #sectionContainer h2 {
   margin-bottom: 0;
 }
