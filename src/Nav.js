@@ -5,7 +5,7 @@ const Nav = () => (
   <div id="navContainer">
       <section className="navBar">
         <div id="navLinkContainer">
-          <a href="#sectionContainer" className="navLink" title="About Me">Content</a>
+          <a href="#main" className="navLink" title="About Me">Content</a>
           <a href="#contact" className="navLink" title="Contact Info and Form">Contact</a>
         </div>
         <ContactIcons className="nav"/>

@@ -50,7 +50,7 @@ class App extends Component {
           <Landing />
         </section>
         <section id="main">
-          <div id="sectionContainer">
+          <div className="sectionContainer">
             <ReactCSSTransitionGroup
               transitionName="toggle"
               transitionEnterTimeout={400}
