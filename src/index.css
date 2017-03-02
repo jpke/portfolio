@@ -181,7 +181,7 @@ h2 {
   justify-content: space-between;
 }
 
-.sectionNav button {
+.sectionNav button, .moreInfo {
   width: 100px;
   height: 30px;
   border-radius: 5px;
@@ -191,7 +191,7 @@ h2 {
   font-size: 20px;
 }
 
-.sectionNav button:hover {
+.sectionNav button:hover, .moreInfo:hover {
   background-color: rgba(251,239,223,1);
 }
 
@@ -377,7 +377,7 @@ p img {
   max-width: 1050px;
 }
 
-.projectContainer {
+.projectContainer, .moreProjectInfoContainer {
   flex: 1 0 auto;
   margin: 0.5vmin;
   padding: 12px;
@@ -388,6 +388,23 @@ p img {
 
 .projectContainer h3 {
   font-size: 22px;
+}
+
+.moreProjectInfoContainer {
+  position: absolute;
+  top: 110vh;
+  left: 50%;
+  margin-left: -24%;
+  margin-right: auto;
+  box-shadow: 0.5px 1.5px 10.5px 10.5px rgba(0,0,0, 0.5);
+  background-color: rgba(232,209,203,0.9);
+  border-radius: 5px;
+}
+
+.moreInfo {
+  font-size: smaller;
+  height: 28px;
+  width: 55px;
 }
 
 .minHeightRow .projectImgContainer {

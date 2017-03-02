@@ -13,6 +13,11 @@ const Project = (props) => (
         <p className="projectDescription">{props.description}</p>
         <Technologies technologies={props.technologies} iconClass="techUsedIcon"/>
         <a href={props.github} title="Go to Code"><i className="fa fa-code codeIcon" aria-hidden="true"></i></a>
+        <div className="moreInfoContainer">
+          <button className="moreInfo" onClick={() => {props.showMoreInfo(props)}}>
+            More
+          </button>
+        </div>
       </div>
 )
 

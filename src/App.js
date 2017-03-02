@@ -6,6 +6,7 @@ import Landing from './Landing'
 import AboutMe from './AboutMe'
 import BlogPosts from './BlogPosts'
 import Projects from './Projects'
+import ProjectInfo from './ProjectInfo'
 import Contact from './Contact'
 
 class App extends Component {
@@ -13,7 +14,8 @@ class App extends Component {
     super(props);
     this.state = {
       blogPosts: false,
-      view: "about"
+      view: "about",
+      project: false
     };
     fetch("https://public-api.wordpress.com/rest/v1.1/sites/jpearnestblog.wordpress.com/posts/?number=10")
     .then(response => {
@@ -42,6 +44,11 @@ class App extends Component {
       }
     }
   }
+  showMoreInfo(project) {
+    this.setState({
+      project: project
+    });
+  }
   render() {
     return (
       <div id="App">
@@ -58,7 +65,10 @@ class App extends Component {
                 {this.state.view === "about" &&
                   <AboutMe toggleView={this.toggleView.bind(this)} />}
                 {this.state.view === "apps" &&
-                  <Projects toggleView={this.toggleView.bind(this)} />}
+                  <Projects toggleView={this.toggleView.bind(this)}
+                            showMoreInfo={this.showMoreInfo.bind(this)}/>}
+                {this.state.project &&
+                  <ProjectInfo project={this.state.project} />}
                 {this.state.view === "blog" &&
                   <BlogPosts toggleView={this.toggleView.bind(this)} blogPosts={this.state.blogPosts} />}
             </ReactCSSTransitionGroup>
