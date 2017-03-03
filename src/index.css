@@ -105,40 +105,7 @@ h2 {
   margin: 2vh;
 }
 
-/*#main*/
-.sectionContainer {
-  min-height: 100vh;
-  max-width: 1050px;
-  margin: 0 auto;
-  background-color: rgba(232,209,203,0.7);
-  border-radius: 5px;
-  border: 3px solid rgba(0,0,0,0);
-  /*border: 3px solid black;*/
-  font-size: large;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.toggle-enter {
-  opacity: 0.01;
-  transition: opacity 400ms ease-in
-}
-
-.toggle-enter.toggle-enter-active {
-  opacity: 1;
-  transition: opacity 400ms ease-in
-}
-
-.toggle-leave {
-  opacity: 1;
-}
-
-.toggle-leave.toggle-leave-active {
-  opacity: 0.01;
-  transition: opacity 400ms ease-in;
-}
-
+/*animate chevrons*/
 .fa-chevron-down {
   animation: 2s infinite bounce;
   animation-delay: 2.5s;
@@ -167,6 +134,39 @@ h2 {
   20%, 60% {
     font-size: 6vmax;
   }
+}
+
+/*#main*/
+.sectionContainer {
+  min-height: 100vh;
+  max-width: 1050px;
+  margin: 0 auto;
+  background-color: rgba(232,209,203,0.7);
+  border-radius: 5px;
+  border: 3px solid rgba(0,0,0,0);
+  /*border: 3px solid black;*/
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.toggle-enter {
+  opacity: 0.01;
+}
+
+.toggle-enter.toggle-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-out
+}
+
+.toggle-leave {
+  opacity: 1;
+}
+
+.toggle-leave.toggle-leave-active {
+  opacity: 0.01;
+  transition: opacity 100ms ease-in;
 }
 
 
@@ -216,10 +216,6 @@ h2 {
   font-size: larger;
   max-width: 700px;
   text-align: left;
-}
-
-.aboutMeText a {
-  color: #222222;
 }
 
 .profilePicContainer {
@@ -377,7 +373,7 @@ p img {
   max-width: 1050px;
 }
 
-.projectContainer, #moreProjectInfoContainer {
+.projectContainer {
   flex: 1 0 auto;
   margin: 0.5vmin;
   padding: 12px;
@@ -392,19 +388,58 @@ p img {
 
 #moreProjectInfoContainer {
   position: absolute;
-  top: 110vh;
+  width: 600px;
   left: 50%;
-  margin-left: -24%;
-  margin-right: auto;
+  margin-left: -300px;
   box-shadow: 0.5px 1.5px 10.5px 10.5px rgba(0,0,0, 0.5);
-  background-color: rgba(232,209,203,0.9);
+  background-color: rgba(232,209,203,1);
   border-radius: 5px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.listTitleContainer {
+  width: 100%;
+  text-align: left;
+  padding-left: 40px;
+}
+
+#moreProjectInfoContainer p, #moreProjectInfoContainer li {
+  font-size: 17px;
+}
+
+#moreProjectInfoContainer h4 {
+  margin-bottom: 3px;
+  font-weight: normal;
+  font-size: larger;
+}
+
+#moreProjectInfoContainer ul {
+  list-style: disc;
+  text-align: left;
+  width: 100%;
+  padding: 3px 10%;
+  margin: 0 auto 3px auto;
+}
+
+.projectTimeSpan {
+  margin-top: 6px;
+}
+
+.projectTimeSpan h5 {
+  margin: 3px auto;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 .moreInfo {
   font-size: smaller;
   height: 28px;
   width: 55px;
+  text-align: center;
 }
 
 .minHeightRow .projectImgContainer {
@@ -427,7 +462,6 @@ p img {
 .projectDescription {
   margin: 6px auto;
   display: flex;
-  /*width: 49vw;*/
   max-width: 94%;
   background-color: rgba(255,255,255,0.9);
   border-radius: 5px;
@@ -569,7 +603,6 @@ p img {
     background-size: contain;
   }
   .titleContainer {
-    /*margin-top: 20vh;*/
     padding: 0;
   }
   h1 {
@@ -611,6 +644,20 @@ p img {
   }
   .projectDescription {
     max-width: 450px;
+  }
+  #moreProjectInfoContainer {
+    width: 90%;
+    margin-left: -45%;
+  }
+  .listTitleContainer {
+    text-align: center;
+    padding: 0;
+  }
+  #moreProjectInfoContainer ul {
+    width: 95%;
+  }
+  #moreProjectInfoContainer li {
+    margin: 5px auto;
   }
   .tech-top-row {
     display: flex;

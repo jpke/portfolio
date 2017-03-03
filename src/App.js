@@ -32,7 +32,14 @@ class App extends Component {
     });
   }
   toggleView(event) {
-    this.setState({view: event.target.className})
+    if(this.state.project) {
+      this.setState({
+        view: event.target.className,
+        project: false
+      })
+    } else {
+      this.setState({view: event.target.className})
+    }
   }
   componentDidUpdate(prevProps, prevState) {
     if(prevState.view !== this.state.view) {
@@ -43,11 +50,22 @@ class App extends Component {
         window.scrollTo(0, offset);
       }
     }
+    if(prevState.project !== this.state.project && this.state.project) {
+      console.log(window.scrollY, innerHeight, window.scrollY + (innerHeight * 0.15))
+      let moreProjectInfoElement = document.getElementById("moreProjectInfoContainer")
+      moreProjectInfoElement.style.top = (window.scrollY + (innerHeight * 0.15)).toString() + "px";
+    }
   }
   showMoreInfo(project) {
-    this.setState({
-      project: project
-    });
+    if(project) {
+      this.setState({
+        project: project
+      })
+    } else {
+      this.setState({
+        project: false
+      })
+    }
   }
   render() {
     return (
@@ -60,8 +78,8 @@ class App extends Component {
           <div className="sectionContainer">
             <ReactCSSTransitionGroup
               transitionName="toggle"
-              transitionEnterTimeout={400}
-              transitionLeaveTimeout={400}>
+              transitionEnterTimeout={300}
+              transitionLeaveTimeout={300}>
                 {this.state.view === "about" &&
                   <AboutMe toggleView={this.toggleView.bind(this)} />}
                 {this.state.view === "apps" &&
