@@ -8,6 +8,7 @@ const Project = (props) => (
           <a href={props.deployLink} title={props.title + " App"}>
             <img src={props.image} className="projectImg" alt={props.title}/>
             <span className="sr-only">{props.title + " App"}</span>
+            <p>Demo</p>
           </a>
         </div>
         <p className="projectDescription">{props.description}</p>

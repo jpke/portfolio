@@ -44,6 +44,8 @@ a:hover, .downArrow a:hover, .upArrow a:hover, #welcome:hover {
 #navContainer {
   position: fixed;
   width: 100%;
+  z-index: 1000;
+  text-shadow: 0 0 4.5px rgba(232,209,203,0.5);
 }
 
 .navBar {
@@ -193,6 +195,7 @@ h2 {
 
 .sectionNav button:hover, .moreInfo:hover {
   background-color: rgba(251,239,223,1);
+  box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.8);
 }
 
 .aboutMeContentTechContainer {
@@ -386,6 +389,10 @@ p img {
   font-size: 22px;
 }
 
+.minHeightRow {
+  min-height: 291px;
+}
+
 #moreProjectInfoContainer {
   position: absolute;
   width: 600px;
@@ -394,7 +401,7 @@ p img {
   box-shadow: 0.5px 1.5px 10.5px 10.5px rgba(0,0,0, 0.5);
   background-color: rgba(232,209,203,1);
   border-radius: 5px;
-  padding: 6px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -412,7 +419,7 @@ p img {
 }
 
 #moreProjectInfoContainer h4 {
-  margin-bottom: 3px;
+  margin: 3px auto;
   font-weight: normal;
   font-size: larger;
 }
@@ -435,6 +442,10 @@ p img {
   font-size: 18px;
 }
 
+#moreProjectInfoContainer .moreInfo {
+  margin: 12px auto 3px auto;
+}
+
 .moreInfo {
   font-size: smaller;
   height: 28px;
@@ -442,22 +453,48 @@ p img {
   text-align: center;
 }
 
-.minHeightRow .projectImgContainer {
+.projectImgContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 291px;
+  position: relative;
 }
 
-.projectImg {
+.projectImgContainer a {
   max-width: 95%;
-  max-height: 291px;
+  margin: 0 auto;
+}
+
+.projectImgContainer p {
+  position: absolute;
+  width: 120px;
+  left: 50%;
+  margin-left: -60px;
+  top: 50%;
+  height: 50px;
+  margin-top: -25px;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: rgba(251,239,223,1);
   border-radius: 5px;
 }
 
-.projectImg:hover {
+.projectImgContainer a:hover p {
+  background-color: rgba(251,239,223,1);
+}
+
+.projectImg {
+  max-width: 100%;
+  max-height: 291px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.projectImgContainer a:hover .projectImg {
   box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.8);
 }
+
 
 .projectDescription {
   margin: 6px auto;
@@ -465,7 +502,7 @@ p img {
   max-width: 94%;
   background-color: rgba(255,255,255,0.9);
   border-radius: 5px;
-  padding: 5px;
+  padding: 6px 12px;
   font-size: 17px;
   height: 80px;
   align-items: center;
@@ -527,7 +564,7 @@ p img {
 .upArrow {
   margin-top: 15vh;
   font-size: 5vmax;
-  width: 80px;
+  width: 7vmax;
   height: 80px;
 }
 
@@ -558,9 +595,6 @@ p img {
   }
   .techDiv {
     min-height: 20vh;
-  }
-  .aboutMeText {
-    font-size: 3vmax;
   }
   .aboutMeContent {
     flex-direction: column;
@@ -618,10 +652,6 @@ p img {
   .aboutMeContent {
     flex-direction: column-reverse;
   }
-  /*#footer {
-    color: #000000;
-    text-shadow: 0.9px 0 0 #FCAF71, -0.9px 0 0 #FCAF71, 0 0.9px 0 #FCAF71, 0 -0.9px 0 #FCAF71, 1.2px 1.2px #FCAF71, -1.2px -1.2px 0 #FCAF71, 1.2px -1.2px 0 #FCAF71, -1.2px 1.2px 0 #FCAF71;
-  }*/
 }
 
 @media screen and (max-width: 667px) {
@@ -648,6 +678,7 @@ p img {
   #moreProjectInfoContainer {
     width: 90%;
     margin-left: -45%;
+    padding: 12px 6px;
   }
   .listTitleContainer {
     text-align: center;
