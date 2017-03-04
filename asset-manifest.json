@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.2a3eaf82.css",
   "main.css.map": "static/css/main.2a3eaf82.css.map",
-  "main.js": "static/js/main.5aed0c79.js",
-  "main.js.map": "static/js/main.5aed0c79.js.map",
+  "main.js": "static/js/main.eb91d487.js",
+  "main.js.map": "static/js/main.eb91d487.js.map",
   "static/media/R.svg": "static/media/R.b188de39.svg",
   "static/media/background.jpg": "static/media/background.5c8862b4.jpg",
   "static/media/blogAppReactNative.jpg": "static/media/blogAppReactNative.cbe56009.jpg",
@@ -16,9 +16,11 @@
   "static/media/medicationReminder.jpg": "static/media/medicationReminder.887aba0f.jpg",
   "static/media/mongodb.svg": "static/media/mongodb.8d658669.svg",
   "static/media/node.svg": "static/media/node.027f2bab.svg",
+  "static/media/pah.jpg": "static/media/pah.7bb157fd.jpg",
   "static/media/postgresql.svg": "static/media/postgresql.0ded94f4.svg",
   "static/media/profileMe.jpg": "static/media/profileMe.bc14e235.jpg",
   "static/media/react.svg": "static/media/react.4ee9588e.svg",
   "static/media/rn.svg": "static/media/rn.50ca518a.svg",
-  "static/media/ticTacToe.png": "static/media/ticTacToe.5e5b573e.png"
+  "static/media/ticTacToe.png": "static/media/ticTacToe.5e5b573e.png",
+  "static/media/youTubeApp.jpg": "static/media/youTubeApp.a8c98de7.jpg"
 }
