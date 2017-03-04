@@ -4,7 +4,9 @@ import Project from './Project'
 import eLearn from '../public/images/eLearnQuiz.jpg'
 import bulldogquizapp from '../public/images/bulldogquizapp.jpg'
 import ewokese from '../public/images/ewokese.jpg'
+import pah from '../public/images/pah.jpg'
 import ticTacToe from '../public/images/ticTacToe.png'
+import youTubeApp from '../public/images/youTubeApp.jpg'
 import blogAppReactNative from '../public/images/blogAppReactNative.jpg'
 import medicationReminder from '../public/images/medicationReminder.jpg'
 
@@ -27,7 +29,7 @@ const Projects = (props) => (
           moreInfo={{
             timespan: "three weeks",
             responsibilities: ["entire app - solo project"],
-            learned: ["developed data structure and flow for relatively complex app", "learned necessity of clearly planning app architecture before starting to code", "gained experience with CRUD operations in mongoDB", "learned how to use BOX api", "learned how to accept form input into redux and use it to edit app data"]
+            learned: ["developed data structure and flow for multiple related objects, including users, courses, quizzes and lessons", "learned necessity of clearly planning app architecture before starting to code", "gained experience with CRUD operations in mongoDB", "learned how to use BOX api", "managed application state with redux", "handled form input with redux and async operations", "deployed client and server code to heroku"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
@@ -36,12 +38,12 @@ const Projects = (props) => (
           deployLink="https://jpke.github.io/spaced-rep-deploy/"
           image={ewokese}
           description="Teaches Ewok words using a spaced-repetition algorithm"
-          github="https://github.com/jpke/spaced-rep-deploy/tree/deploy"
+          github="https://github.com/jpke/spaced-rep-deploy"
           technologies={["html", "css", "javascript", "react", "node", "mongo"]}
           moreInfo={{
             timespan: "one week",
-            responsibilities: ["implemented Google OAuth 2.0", "helped build react app", "lead team - facillitated discussion and formed consensus", "pioneered working in new (to us) build system, Create React App"],
-            learned: ["learned to manage application state with redux", "deployment protocol varies with build system, understand requirements before committing to system"]
+            responsibilities: ["Google OAuth 2.0", "help with react frontend", "team lead"],
+            learned: ["learned to manage application state with redux", "found understanding deployment protocol wise before committing to build system", "worked with Create React App, deploying to Heroku", "lead team - facillitated discussion and formed consensus"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
@@ -53,11 +55,41 @@ const Projects = (props) => (
           image={blogAppReactNative}
           description="A basic blog created with react native for iOS"
           github="https://github.com/jpke/BlogApp"
-          technologies={["html", "css", "javascript", "react-native", "node", "mongo"]}
+          technologies={["css", "javascript", "react-native", "node", "mongo"]}
           moreInfo={{
             timespan: "one week",
             responsibilities: ["entire app - solo project"],
-            learned: ["gained experience working in react native", "successfully deployed app build to appetize"]
+            learned: ["built authentication into react native app", "wrote create, read and delete endpoints in REST api via Express; implemented these in iOS app", "used json web tokens for persisting authentication", "successfully deployed app prototype to appetize.io"]
+          }}
+          showMoreInfo={props.showMoreInfo}
+        />
+        <Project
+          title="YouTube Search App"
+          deployLink="https://appetize.io/app/gt4bgr085u7xtdvztz35k27u40?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3"
+          image={youTubeApp}
+          description="Search YouTube videos on iOS with react native"
+          github="https://github.com/jpke/YouTubeApp"
+          technologies={["css", "javascript", "react-native"]}
+          moreInfo={{
+            timespan: "one day",
+            responsibilities: ["entire app - solo project"],
+            learned: ["built a simple iOS application with react native", "utilized YouTube api", "displayed video in iOS app"]
+          }}
+          showMoreInfo={props.showMoreInfo}
+        />
+      </section>
+      <section className="projects-row">
+        <Project
+          title="Pancakes Against Humanity"
+          deployLink="https://pah-cah.herokuapp.com/"
+          image={pah}
+          description="A pancake-themed rendition of Cards Against Humanity"
+          github="https://github.com/fantastic-pancake/pancakes-against-humanities"
+          technologies={["html", "css", "javascript", "react", "node", "mongo"]}
+          moreInfo={{
+            timespan: "one week",
+            responsibilities: ["Facebook OAuth 2.0", "websockets proof of concept", "game card CSS styling", "user profile pics in game and chat room"],
+            learned: ["groked an unfamiliar codebase which used an unfamiliar library, RxJS", "worked within someone else's code, adapting it and adding features", "delivered minimum viable product within given time constraints"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
@@ -70,8 +102,8 @@ const Projects = (props) => (
           technologies={["html", "css", "javascript", "react", "node", "mongo"]}
           moreInfo={{
             timespan: "one week",
-            responsibilities: ["serverside REST api"],
-            learned: ["gained experience building a REST api", "saw the importance of clearly communicating api endpoint requirements between frontend and backend team"]
+            responsibilities: ["REST api in Express"],
+            learned: ["gained experience building a REST api", "learned importance for clear communication of api requirements between frontend and backend team"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
@@ -85,9 +117,9 @@ const Projects = (props) => (
           github="https://github.com/jpke/bulldogquizapp"
           technologies={["html", "css", "javascript", "jquery"]}
           moreInfo={{
-            timespan: "one or two days",
+            timespan: "1.5 days",
             responsibilities: ["entire app - pair coded it with partner"],
-            learned: ["how to use jQuery to listen to and respond to user actions", "how to initialize, change and reset application state using jQuery", "gained experience styling app with CSS"]
+            learned: ["used jQuery to listen to and respond to user actions", "initialized, changed and reset application state using jQuery", "gained experience styling app with CSS", "deployed to gh-pages"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
