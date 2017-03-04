@@ -37,18 +37,19 @@
     ga('create', 'UA-92906107-1', 'auto');
     ga('send', 'pageview');
   </script>
-  <!-- <script>
+  <script>
     addEventListener("load", function() {
-      console.log("innerHeight", innerHeight, "scrollHeight", document.body.scrollHeight, pageYOffset);
       var max = document.body.scrollHeight - innerHeight;
       addEventListener("scroll", function() {
-        console.log("innerHeight", innerHeight, "scrollHeight", document.body.scrollHeight, pageYOffset);
-        let bodyRect = document.body.getBoundingClientRect(),
-        elemRect = document.getElementById("main").getBoundingClientRect(),
-        offset   = elemRect.top - bodyRect.top;
-        console.log("offset: ", offset);
+        var element = document.getElementById("navContainer");
+        if(window.scrollY > innerHeight) {
+          element.style.backgroundColor = "rgba(205,198,166,0.9)";
+          }
+        if(window.scrollY < innerHeight) {
+          element.style.backgroundColor = "";
+        }
       });
     })
-  </script> -->
+  </script>
   <noscript>Please enable JavaScript to view this page</noscript>
 </html>
