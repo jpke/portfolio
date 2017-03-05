@@ -46,7 +46,6 @@ a:hover, .downArrow a:hover, .upArrow a:hover, #welcome:hover {
   width: 100%;
   z-index: 1000;
   text-shadow: 0 0 4.5px rgba(232,209,203,0.5);
-  /*background-color: rgba(205,198,166,0.9);*/
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -153,7 +152,6 @@ h2 {
   background-color: rgba(232,209,203,0.7);
   border-radius: 5px;
   border: 3px solid rgba(0,0,0,0);
-  /*border: 3px solid black;*/
   font-size: large;
   display: flex;
   flex-direction: column;
@@ -483,15 +481,12 @@ p img {
   margin-top: -25px;
   font-size: 40px;
   font-weight: bold;
-  /*background-color: rgba(251,239,223,1);*/
-  /*background-color: rgba(100,146,161,1);*/
   background-color: rgba(205,198,166,1);
   border-radius: 5px;
   color: rgba(0,0,0,1);
 }
 
 .projectImgContainer a:hover p {
-  /*background-color: rgba(177,200,208,1);*/
   background-color: rgba(215,209,183,1);
 }
 
