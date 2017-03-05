@@ -20,8 +20,8 @@ class Landing extends Component {
     return (
       <div className="landingContainer">
         <div className="cardContactTop">
-          <h2>jp@jpearnest.com</h2>
-          <h2>540.273.5906</h2>
+          <h2>email@example.com</h2>
+          <h2>000.000.0000</h2>
         </div>
         <section className="titleContainer">
           <ReactCSSTransitionGroup
@@ -40,7 +40,7 @@ class Landing extends Component {
           </ReactCSSTransitionGroup>
           <a id="downToSection" href="#main"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
         </div>
-          <h2 className="site">jpearnest.com</h2>
+          <h2 className="site">example.com</h2>
       </div>
     )
   }
