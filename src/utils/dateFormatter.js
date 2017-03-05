@@ -12,6 +12,6 @@ export default function formatAMPM(itemDate) {
   minutes = minutes < 10 ? '0'+minutes : minutes;
   const strTime = hours + ':' + minutes + ' ' + ampm;
   return (
-    monthNames[date.getMonth()] + " " + date.getDay() + ",  " + date.getFullYear() + " " + strTime
+    monthNames[date.getMonth()] + " " + date.getDate() + ",  " + date.getFullYear() + " " + strTime
   );
 }

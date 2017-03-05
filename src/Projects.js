@@ -5,7 +5,7 @@ import eLearn from '../public/images/eLearnQuiz.jpg'
 import bulldogquizapp from '../public/images/bulldogquizapp.jpg'
 import ewokese from '../public/images/ewokese.jpg'
 import pah from '../public/images/pah.jpg'
-import ticTacToe from '../public/images/ticTacToe.png'
+// import ticTacToe from '../public/images/ticTacToe.png'
 import youTubeApp from '../public/images/youTubeApp.jpg'
 import blogAppReactNative from '../public/images/blogAppReactNative.jpg'
 import medicationReminder from '../public/images/medicationReminder.jpg'
@@ -29,7 +29,7 @@ const Projects = (props) => (
           moreInfo={{
             timespan: "three weeks",
             responsibilities: ["entire app - solo project"],
-            learned: ["developed data structure and flow for multiple related objects, including users, courses, quizzes and lessons", "learned necessity of clearly planning app architecture before starting to code", "gained experience with CRUD operations in mongoDB", "learned how to use BOX api", "managed application state with redux", "handled form input with redux and async operations", "deployed client and server code to heroku"]
+            learned: ["developed data structure and flow for multiple related objects, including users, courses, quizzes and lessons", "REST api CRUD operations", "used BOX api for filesystem", "application state managed with multiple redux reducers", "heroku deployment", "react slingshot build template"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
@@ -42,8 +42,8 @@ const Projects = (props) => (
           technologies={["html", "css", "javascript", "react", "node", "mongo"]}
           moreInfo={{
             timespan: "one week",
-            responsibilities: ["Google OAuth 2.0", "help with react frontend", "team lead"],
-            learned: ["learned to manage application state with redux", "found understanding deployment protocol wise before committing to build system", "worked with Create React App, deploying to Heroku", "lead team - facillitated discussion and formed consensus"]
+            responsibilities: ["Google OAuth 2.0", "react assistance", "team lead"],
+            learned: ["managed application state with redux", "heroku deployment", "create react app built template", "lead team - facillitated discussion and formed consensus"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
@@ -59,7 +59,7 @@ const Projects = (props) => (
           moreInfo={{
             timespan: "one week",
             responsibilities: ["entire app - solo project"],
-            learned: ["built authentication into react native app", "wrote create, read and delete endpoints in REST api via Express; implemented these in iOS app", "used json web tokens for persisting authentication", "successfully deployed app prototype to appetize.io"]
+            learned: ["react native iOS app", "json web token authentication", "REST api CRUD operations", "deployed app prototype to appetize.io"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
@@ -73,7 +73,7 @@ const Projects = (props) => (
           moreInfo={{
             timespan: "one day",
             responsibilities: ["entire app - solo project"],
-            learned: ["built a simple iOS application with react native", "utilized YouTube api", "displayed video in iOS app"]
+            learned: ["simple react native iOS app", "calls YouTube api", "plays video in app, using webview"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
@@ -89,7 +89,7 @@ const Projects = (props) => (
           moreInfo={{
             timespan: "one week",
             responsibilities: ["Facebook OAuth 2.0", "websockets proof of concept", "game card CSS styling", "user profile pics in game and chat room"],
-            learned: ["groked an unfamiliar codebase which used an unfamiliar library, RxJS", "worked within someone else's code, adapting it and adding features", "delivered minimum viable product within given time constraints"]
+            learned: ["groked unfamiliar codebase", "learned RxJS to understand codebase", "adapted and added features to prewritten codebase", "gulp for build system"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
@@ -102,8 +102,8 @@ const Projects = (props) => (
           technologies={["html", "css", "javascript", "react", "node", "mongo"]}
           moreInfo={{
             timespan: "one week",
-            responsibilities: ["REST api in Express"],
-            learned: ["gained experience building a REST api", "learned importance for clear communication of api requirements between frontend and backend team"]
+            responsibilities: ["REST api"],
+            learned: ["basic authentication", "REST api CRUD operations", "utilized node-schedule and mailjet to automate reminder emails"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
@@ -119,7 +119,7 @@ const Projects = (props) => (
           moreInfo={{
             timespan: "1.5 days",
             responsibilities: ["entire app - pair coded it with partner"],
-            learned: ["used jQuery to listen to and respond to user actions", "initialized, changed and reset application state using jQuery", "gained experience styling app with CSS", "deployed to gh-pages"]
+            learned: ["used jQuery to listen and respond to user actions", "managed application state using jQuery", "deployed to gh-pages"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
