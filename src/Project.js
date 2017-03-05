@@ -13,8 +13,12 @@ const Project = (props) => (
         </div>
         <p className="projectDescription">{props.description}</p>
         <Technologies technologies={props.technologies} iconClass="techUsedIcon"/>
-        <a href={props.github} target="_blank" title="Go to Code"><i className="fa fa-code codeIcon" aria-hidden="true"></i></a>
         <div className="moreInfoContainer">
+          <a href={props.github} target="_blank" title="Go to Code">
+            <button className="moreInfo">
+              <i className="fa fa-code codeIcon" aria-hidden="true"></i>
+            </button>
+          </a>
           <button className="moreInfo" onClick={() => {props.showMoreInfo(props)}}>
             More
           </button>

@@ -264,7 +264,11 @@ h2 {
 
 .techIconContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.techIconContainer .techIcon {
+  margin: auto 10px;
 }
 
 /*used in about*/
@@ -371,19 +375,22 @@ p img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: auto;
 }
 
 .projects-row {
   display: flex;
   justify-content: center;
   max-width: 1050px;
+  flex: 1;
+}
+
+.row-top {
+  margin-top: 12px;
 }
 
 .projectContainer {
   flex: 1 0 auto;
-  margin: 0.5vmin;
+  margin: 0.2vmin;
   padding: 12px;
   box-shadow: 0.5px 1.5px 1.5px 1.5px rgba(0,0,0, 0.2);
   min-width: 48%;
@@ -391,11 +398,16 @@ p img {
 }
 
 .projectContainer h3 {
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .minHeightRow {
   min-height: 291px;
+}
+
+#placeholder {
+  box-shadow: none;
+  flex: 1;
 }
 
 #moreProjectInfoContainer {
@@ -462,7 +474,7 @@ p img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 291px;
+  /*min-height: 291px;*/
   position: relative;
 }
 
@@ -524,13 +536,16 @@ p img {
   transform: translateY(-3px);
 }
 
-.codeIcon {
-  color:black;
-  font-size: 50px;
-  padding: 12px;
+.moreInfoContainer {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.codeIcon:hover {
-  font-weight: bold;
+
+.codeIcon {
+  margin-top: -2px;
+  font-size: 22px;
 }
 
 

@@ -18,7 +18,7 @@ const Projects = (props) => (
       <button className="blog" onClick={(e) => {props.toggleView(e)}}>Blog</button>
     </div>
     <div className="projectsContainer">
-      <section className="projects-row">
+      <section className="projects-row row-top">
         <Project
           title="eLearn"
           deployLink="https://portfolio-express.herokuapp.com/elearn/#/"
@@ -123,23 +123,25 @@ const Projects = (props) => (
           }}
           showMoreInfo={props.showMoreInfo}
         />
-        <Project
-          title="Tic Tac Toe"
-          deployLink="https://jpke.github.io/tic-tac-toe_portfolio/"
-          image={ticTacToe}
-          description="A modular tic tac toe app, where players can play other players or the computer, and multiple games can be run simultaneously"
-          github="https://github.com/jpke/tic-tac-toe_portfolio"
-          technologies={["html", "css", "javascript", "react"]}
-          moreInfo={{
-            timespan: "one day",
-            responsibilities: ["entire app - pair coded it with partner"],
-            learned: ["gained experience working in react", "built a modular app, where an indeterminate number of components could be created by user", "learned how to manage application state using react only"]
-          }}
-          showMoreInfo={props.showMoreInfo}
-        />
+        <div id="placeholder" className="projectContainer"></div>
       </section>
     </div>
   </div>
 )
 
 export default Projects
+
+// <Project
+//   title="Tic Tac Toe"
+//   deployLink="https://jpke.github.io/tic-tac-toe_portfolio/"
+//   image={ticTacToe}
+//   description="A modular tic tac toe app, where players can play other players or the computer, and multiple games can be run simultaneously"
+//   github="https://github.com/jpke/tic-tac-toe_portfolio"
+//   technologies={["html", "css", "javascript", "react"]}
+//   moreInfo={{
+//     timespan: "one day",
+//     responsibilities: ["entire app - pair coded it with partner"],
+//     learned: ["gained experience working in react", "built a modular app, where an indeterminate number of components could be created by user", "learned how to manage application state using react only"]
+//   }}
+//   showMoreInfo={props.showMoreInfo}
+// />
