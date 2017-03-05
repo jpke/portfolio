@@ -39,6 +39,42 @@ a:hover, .downArrow a:hover, .upArrow a:hover, #welcome:hover {
     text-shadow: 0.9px 0 0 #CCBBAC, -0.9px 0 0 #CCBBAC, 0 0.9px 0 #CCBBAC, 0 -0.9px 0 #CCBBAC, 1.2px 1.2px #CCBBAC, -1.2px -1.2px 0 #CCBBAC, 1.2px -1.2px 0 #CCBBAC, -1.2px 1.2px 0 #CCBBAC;
 }
 
+/*for card*/
+.downArrow, #navContainer{
+  display: none;
+}
+
+.landingContainer: {
+  justify-content: flex-start;
+}
+
+.titleContainer: {
+  margin-bottom: 30vh;
+}
+
+.landingContainer h1 {
+  font-size: 130px;
+}
+
+.landingContainer h2 {
+  font-size: 58px;
+}
+
+.cardContactTop {
+  display: flex;
+  justify-content: space-between;
+  width: 88%;
+  margin: 4vh auto 0 auto;
+}
+
+.cardContact h2 {
+  flex: 1;
+}
+
+.site {
+  margin-top: 26vh;
+  margin-bottom: 10vh;
+}
 
 /*#App*/
 #navContainer {
@@ -73,7 +109,7 @@ a:hover, .downArrow a:hover, .upArrow a:hover, #welcome:hover {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .appear-enter {
@@ -98,7 +134,7 @@ a:hover, .downArrow a:hover, .upArrow a:hover, #welcome:hover {
 
 
 .titleContainer{
-  padding-top: 13vmin;
+  /*padding-top: 13vmin;*/
 }
 
 h1 {
