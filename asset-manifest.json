@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.7a368fd3.css",
-  "main.css.map": "static/css/main.7a368fd3.css.map",
-  "main.js": "static/js/main.cac7103c.js",
-  "main.js.map": "static/js/main.cac7103c.js.map",
+  "main.css": "static/css/main.4aa5d8cb.css",
+  "main.css.map": "static/css/main.4aa5d8cb.css.map",
+  "main.js": "static/js/main.fa317783.js",
+  "main.js.map": "static/js/main.fa317783.js.map",
   "static/media/R.svg": "static/media/R.b188de39.svg",
   "static/media/background.jpg": "static/media/background.5c8862b4.jpg",
   "static/media/blogAppReactNative.jpg": "static/media/blogAppReactNative.cbe56009.jpg",
@@ -21,6 +21,5 @@
   "static/media/profileMe.jpg": "static/media/profileMe.bc14e235.jpg",
   "static/media/react.svg": "static/media/react.4ee9588e.svg",
   "static/media/rn.svg": "static/media/rn.50ca518a.svg",
-  "static/media/ticTacToe.png": "static/media/ticTacToe.5e5b573e.png",
   "static/media/youTubeApp.jpg": "static/media/youTubeApp.a8c98de7.jpg"
 }
