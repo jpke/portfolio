@@ -42,7 +42,7 @@
       var max = document.body.scrollHeight - innerHeight;
       addEventListener("scroll", function() {
         var element = document.getElementById("navContainer");
-        if(window.scrollY > innerHeight) {
+        if(window.scrollY > (innerHeight * 0.9)) {
           element.style.backgroundColor = "rgba(205,198,166,0.9)";
           }
         if(window.scrollY < innerHeight) {

@@ -17,7 +17,7 @@ const ProjectInfo = ({project}) => (
           })}
         </ul>
         <div className="listTitleContainer">
-          <h4>Takeaways</h4>
+          <h4>Notable</h4>
         </div>
         <ul className="learned">
           {project.moreInfo.learned.map((lesson, index) => {
