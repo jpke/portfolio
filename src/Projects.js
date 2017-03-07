@@ -54,7 +54,7 @@ const Projects = (props) => (
           deployLink="https://appetize.io/app/jnhahxte9j2wwygntg5jummhjr?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3"
           image={blogAppReactNative}
           description="A basic blog created with react native for iOS"
-          github="https://github.com/jpke/BlogApp"
+          github="https://github.com/jpke/mobileBlogApp"
           technologies={["css", "javascript", "react-native", "node", "mongo"]}
           moreInfo={{
             timespan: "one week",
