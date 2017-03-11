@@ -55,7 +55,7 @@ const Projects = (props) => (
           image={blogAppReactNative}
           description="A basic blog created with react native for iOS"
           github="https://github.com/jpke/mobileBlogApp"
-          technologies={["css", "javascript", "react-native", "node", "mongo"]}
+          technologies={["javascript", "react-native", "node", "mongo"]}
           moreInfo={{
             timespan: "one week",
             responsibilities: ["entire app - solo project"],
@@ -69,7 +69,7 @@ const Projects = (props) => (
           image={youTubeApp}
           description="Search YouTube videos on iOS with react native"
           github="https://github.com/jpke/YouTubeApp"
-          technologies={["css", "javascript", "react-native"]}
+          technologies={["javascript", "react-native"]}
           moreInfo={{
             timespan: "one day",
             responsibilities: ["entire app - solo project"],
