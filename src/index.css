@@ -21,6 +21,14 @@ a:hover, .downArrow a:hover, .upArrow a:hover, #welcome:hover {
   text-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.8);
 }
 
+button {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .bodyNonIOS {
   background: url("../public/images/background.jpg") no-repeat fixed;
   -webkit-background-size: cover;
@@ -46,8 +54,8 @@ a:hover, .downArrow a:hover, .upArrow a:hover, #welcome:hover {
   width: 100%;
   z-index: 1000;
   text-shadow: 0 0 4.5px rgba(232,209,203,0.5);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  /*border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;*/
 }
 
 .navBar {
@@ -55,7 +63,7 @@ a:hover, .downArrow a:hover, .upArrow a:hover, #welcome:hover {
   justify-content: space-between;
   align-items: center;
   margin: 1vh;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .navLink {
@@ -124,10 +132,10 @@ h2 {
     transform: translateY(0);
   }
 	40% {
-    transform: translateY(-15px);
+    transform: translateY(-5px);
   }
 	60% {
-    transform: translateY(-10px);
+    transform: translateY(-2.5px);
   }
 }
 
@@ -137,10 +145,10 @@ h2 {
 
 @keyframes pulse {
   0%, 40%, 80%, 100% {
-    font-size: 4vmax;
+    font-size: 4.8vmax;
   }
   20%, 60% {
-    font-size: 6vmax;
+    font-size: 5.2vmax;
   }
 }
 
@@ -149,7 +157,8 @@ h2 {
   min-height: 100vh;
   max-width: 1050px;
   margin: 0 auto;
-  background-color: rgba(232,209,203,0.7);
+  /*background-color: rgba(232,209,203,0.7);*/
+  background-color: rgba(204,198,164, 0.9);
   border-radius: 5px;
   border: 3px solid rgba(0,0,0,0);
   font-size: large;
@@ -183,24 +192,26 @@ h2 {
 }
 
 .sectionNav {
-  margin: 0 15px;
+  margin: 0 36px;
   margin-bottom: 3px;
   display: flex;
   justify-content: space-between;
 }
 
 .sectionNav button, .moreInfo {
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   border-radius: 5px;
   border: 2px solid #134355;
-  background-color: rgba(251,239,223,0.3);
-  color: #000000;
+  /*background-color: rgba(251,239,223,0.9);*/
+  background-color: #508899;
+  color: rgba(255,255,255,1);
   font-size: 20px;
 }
 
 .sectionNav button:hover, .moreInfo:hover {
-  background-color: rgba(251,239,223,1);
+  /*background-color: rgba(251,239,223,1);*/
+  background-color: #B9CFD6;
   box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.8);
 }
 
@@ -220,7 +231,7 @@ h2 {
   flex: 3;
   padding: 15px;
   margin: 15px;
-  background-color: rgba(204,198,164, 0.9);
+  /*background-color: rgba(204,198,164, 0.9);*/
   border-radius: 5px;
   font-size: larger;
   max-width: 700px;
@@ -336,12 +347,15 @@ h2 {
 
 .post {
   padding: 25px;
-  max-width: 900px;
+  max-width: 730px;
   margin: 3vh auto;
-  background-color: rgba(204,198,164, 0.9);
-  border-radius: 5px;
+  /*background-color: rgba(204,198,164, 0.9);*/
+  /*border-radius: 5px;*/
   text-align: left;
   overflow: hidden;
+  line-height: 1.5;
+  font-size: larger;
+  border-bottom: 3px solid black
 }
 
 .post a{
@@ -393,7 +407,7 @@ p img {
   flex: 1 0 auto;
   margin: 0.2vmin;
   padding: 12px;
-  box-shadow: 0.5px 1.5px 1.5px 1.5px rgba(0,0,0, 0.2);
+  /*box-shadow: 0.5px 1.5px 1.5px 1.5px rgba(0,0,0, 0.2);*/
   min-width: 48%;
   max-width: 48%;
 }
@@ -467,8 +481,8 @@ p img {
 }
 
 .moreInfo {
-  font-size: smaller;
-  height: 28px;
+  /*font-size: smaller;*/
+  height: 33px;
   width: 85px;
   text-align: center;
 }
@@ -544,6 +558,11 @@ p img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.moreInfoContainer button {
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 .codeIcon {
@@ -709,6 +728,7 @@ p img {
   }
   .projectDescription {
     max-width: 450px;
+    height: auto;
   }
   #moreProjectInfoContainer {
     width: 90%;
@@ -729,6 +749,10 @@ p img {
     display: flex;
     flex-direction: column;
   }
+  .aboutMeText {
+    padding: 3px;
+    font-size: initial;
+  }
 }
 
 @media screen and (max-width: 510px) {
@@ -739,10 +763,15 @@ p img {
 
 @media screen and (max-width: 414px) {
   .navBar {
-    font-size: 18px;
+    font-size: 14px;
+    margin-left: 0;
   }
   .contactIcons a {
     font-size: 15px;
+  }
+  .aboutMeText {
+    padding: 3px;
+    font-size: initial;
   }
 }
 
