@@ -211,7 +211,12 @@ h2 {
 
 .sectionNav button:hover, .moreInfo:hover {
   /*background-color: rgba(251,239,223,1);*/
-  background-color: #B9CFD6;
+  background-color: #A7C3CC;
+  box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.8);
+  color: black;
+}
+
+.sectionNav button:active, .moreInfo:active {
   box-shadow: 0.5px 1.5px 15.5px rgba(0,0,0, 0.8);
 }
 
@@ -447,8 +452,12 @@ p img {
   padding-left: 40px;
 }
 
-#moreProjectInfoContainer p, #moreProjectInfoContainer li {
+#moreProjectInfoContainer p {
   font-size: 17px;
+}
+
+#moreProjectInfoContainer li p {
+  margin: 6px auto;
 }
 
 #moreProjectInfoContainer h4 {
@@ -478,12 +487,13 @@ p img {
 
 #moreProjectInfoContainer .moreInfo {
   margin: 12px auto 3px auto;
+    width: 150px;
 }
 
 .moreInfo {
   /*font-size: smaller;*/
   height: 33px;
-  width: 85px;
+  width: 90px;
   text-align: center;
 }
 
@@ -709,6 +719,9 @@ p img {
   .contactIcons a {
     font-size: 21px;
   }
+  .sectionContainer {
+    font-size: small;
+  }
   .projectsContainer {
     align-items: stretch;
     width: 100%;
@@ -751,7 +764,6 @@ p img {
   }
   .aboutMeText {
     padding: 3px;
-    font-size: initial;
   }
 }
 
@@ -768,6 +780,14 @@ p img {
   }
   .contactIcons a {
     font-size: 15px;
+  }
+  .sectionNav {
+    margin: 0 auto;
+    width: 300px;
+    justify-content: space-between;
+  }
+  .sectionNav button {
+    width: 120px;
   }
   .aboutMeText {
     padding: 3px;

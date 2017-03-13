@@ -13,15 +13,15 @@ const ProjectInfo = ({project}) => (
         </div>
         <ul className="responsibilities">
           {project.moreInfo.responsibilities.map((responsibility, index) => {
-            return <li key={index}>{responsibility}</li>
+            return <li key={index}><p>{responsibility}</p></li>
           })}
         </ul>
         <div className="listTitleContainer">
-          <h4>Notable</h4>
+          <h4>Notes</h4>
         </div>
         <ul className="learned">
           {project.moreInfo.learned.map((lesson, index) => {
-            return <li key={index}>{lesson}</li>
+            return <li key={index}><p>{lesson}</p></li>
           })}
         </ul>
         <button className="moreInfo" onClick={() => {project.showMoreInfo()}}>Close</button>

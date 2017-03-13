@@ -19,7 +19,9 @@ const Project = (props) => (
               <i className="fa fa-code codeIcon" aria-hidden="true"></i>
             </button>
           </a>
-          <button className="moreInfo" onClick={() => {props.showMoreInfo(props)}}>
+          <button className="moreInfo" onClick={(event) => {
+              event.stopPropagation()
+              props.showMoreInfo(props)}}>
             More
           </button>
         </div>

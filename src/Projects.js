@@ -11,7 +11,7 @@ import blogAppReactNative from '../public/images/blogAppReactNative.jpg'
 import medicationReminder from '../public/images/medicationReminder.jpg'
 
 const Projects = (props) => (
-  <div>
+  <div onClick={() => {props.showMoreInfo()}}>
     <h2>Apps</h2>
     <div className="sectionNav">
       <button className="about" onClick={(e) => {props.toggleView(e)}}>About</button>
