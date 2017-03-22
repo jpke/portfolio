@@ -123,6 +123,20 @@ const Projects = (props) => (
           }}
           showMoreInfo={props.showMoreInfo}
         />
+        <Project
+          title="Pocket Bookstore"
+          deployLink="https://appetize.io/app/0d2ja651raq80n91emjr37h5tr?device=iphone6s&scale=75&orientation=portrait&osVersion=10.2"
+          image={bookStore}
+          description="Basic checkout flow for buying a book from an online bookstore."
+          github="https://github.com/jpke/bookstore"
+          technologies={["javascript", "react-native"]}
+          moreInfo={{
+            timespan: "1.5 days",
+            responsibilities: ["entire app - pair coded it with partner"],
+            learned: ["used jQuery to listen and respond to user actions", "managed application state using jQuery", "deployed to gh-pages"]
+          }}
+          showMoreInfo={props.showMoreInfo}
+        />
         <div id="placeholder" className="projectContainer"></div>
       </section>
     </div>
