@@ -5,7 +5,7 @@ import eLearn from '../public/images/eLearnQuiz.jpg'
 import bulldogquizapp from '../public/images/bulldogquizapp.jpg'
 import ewokese from '../public/images/ewokese.jpg'
 import pah from '../public/images/pah.jpg'
-// import ticTacToe from '../public/images/ticTacToe.png'
+import bookStore from '../public/images/bookStore.jpg'
 import youTubeApp from '../public/images/youTubeApp.jpg'
 import blogAppReactNative from '../public/images/blogAppReactNative.jpg'
 import medicationReminder from '../public/images/medicationReminder.jpg'
@@ -50,6 +50,20 @@ const Projects = (props) => (
       </section>
       <section className="projects-row minHeightRow">
         <Project
+          title="Pocket Bookstore"
+          deployLink="https://appetize.io/app/0d2ja651raq80n91emjr37h5tr?device=iphone6s&scale=75&orientation=portrait&osVersion=10.2"
+          image={bookStore}
+          description="Provides client-side checkout flow for buying a book from an online bookstore."
+          github="https://github.com/jpke/bookstore"
+          technologies={["javascript", "react-native"]}
+          moreInfo={{
+            timespan: "4 days",
+            responsibilities: ["entire app - solo project"],
+            learned: ["react native iOS app", "first project with Create React Native App", "first React Native project implementing Redux and Jest snapshots", "deployed app prototype to appetize.io"]
+          }}
+          showMoreInfo={props.showMoreInfo}
+        />
+        <Project
           title="Blog App"
           deployLink="https://appetize.io/app/jnhahxte9j2wwygntg5jummhjr?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3"
           image={blogAppReactNative}
@@ -60,20 +74,6 @@ const Projects = (props) => (
             timespan: "one week",
             responsibilities: ["entire app - solo project"],
             learned: ["react native iOS app", "json web token authentication", "REST api CRUD operations", "deployed app prototype to appetize.io"]
-          }}
-          showMoreInfo={props.showMoreInfo}
-        />
-        <Project
-          title="YouTube Search App"
-          deployLink="https://appetize.io/app/gt4bgr085u7xtdvztz35k27u40?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3"
-          image={youTubeApp}
-          description="Search YouTube videos on iOS with react native"
-          github="https://github.com/jpke/YouTubeApp"
-          technologies={["javascript", "react-native"]}
-          moreInfo={{
-            timespan: "one day",
-            responsibilities: ["entire app - solo project"],
-            learned: ["simple react native iOS app", "calls YouTube api", "plays video in app, using webview"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
@@ -124,24 +124,26 @@ const Projects = (props) => (
           showMoreInfo={props.showMoreInfo}
         />
         <Project
-          title="Pocket Bookstore"
-          deployLink="https://appetize.io/app/0d2ja651raq80n91emjr37h5tr?device=iphone6s&scale=75&orientation=portrait&osVersion=10.2"
-          image={bookStore}
-          description="Basic checkout flow for buying a book from an online bookstore."
-          github="https://github.com/jpke/bookstore"
+          title="YouTube Search App"
+          deployLink="https://appetize.io/app/gt4bgr085u7xtdvztz35k27u40?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3"
+          image={youTubeApp}
+          description="Search YouTube videos on iOS with react native"
+          github="https://github.com/jpke/YouTubeApp"
           technologies={["javascript", "react-native"]}
           moreInfo={{
-            timespan: "1.5 days",
-            responsibilities: ["entire app - pair coded it with partner"],
-            learned: ["used jQuery to listen and respond to user actions", "managed application state using jQuery", "deployed to gh-pages"]
+            timespan: "one day",
+            responsibilities: ["entire app - solo project"],
+            learned: ["simple react native iOS app", "calls YouTube api", "plays video in app, using webview"]
           }}
           showMoreInfo={props.showMoreInfo}
         />
-        <div id="placeholder" className="projectContainer"></div>
       </section>
     </div>
   </div>
 )
+
+//placeholder if there is an odd number of projects
+// <div id="placeholder" className="projectContainer"></div>
 
 export default Projects
 
